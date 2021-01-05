@@ -12,7 +12,7 @@ for obvious reasons. Also it is still a prototype, the
 complete version will be released in due time
 
 This is pure vanilla javascript, no frameworks or library was 
-used for development.
+used for it's development.
 
 If you wish to contact me, use the contact part in
 the application or check out my portfolio
