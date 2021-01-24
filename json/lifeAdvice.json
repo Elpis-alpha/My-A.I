@@ -1,0 +1,402 @@
+[
+  {
+    "id": 1,
+    "quote": "There are plenty of ways to enter a pool. The stairs is not one of them."
+  },
+  {
+    "id": 2,
+    "quote": "Never cancel dinner plans by text message."
+  },
+  {
+    "id": 3,
+    "quote": "Don't know it till you try it."
+  },
+  {
+    "id": 4,
+    "quote": "If a street performer makes you stop walking, you owe him a buck."
+  },
+  {
+    "id": 5,
+    "quote": "Always use 'we' when referring to your home team."
+  },
+  {
+    "id": 6,
+    "quote": "When entrusted with a secret, keep it."
+  },
+  {
+    "id": 7,
+    "quote": "Don't underestimate free throws in a game of HORSE."
+  },
+  {
+    "id": 8,
+    "quote": "Just because you can doesn't mean you should."
+  },
+  {
+    "id": 9,
+    "quote": "Don't dumb yourself down."
+  },
+  {
+    "id": 10,
+    "quote": "You only get one chance to notice a new haircut."
+  },
+  {
+    "id": 11,
+    "quote": "If you're staying more than one night, unpack."
+  },
+  {
+    "id": 12,
+    "quote": "Never park in front of a bar."
+  },
+  {
+    "id": 13,
+    "quote": "Expect the seat in front of you to recline. Prepare accordingly."
+  },
+  {
+    "id": 14,
+    "quote": "Keep a picture of your first fish, first car and first girl/boyfriend."
+  },
+  {
+    "id": 15,
+    "quote": "Hold your heroes to a high standard."
+  },
+  {
+    "id": 16,
+    "quote": "A suntan is earned, not bought."
+  },
+  {
+    "id": 17,
+    "quote": "Never lie to your doctor."
+  },
+  {
+    "id": 18,
+    "quote": "All guns are loaded."
+  },
+  {
+    "id": 19,
+    "quote": "Don't mention sunburns. Believe me, they know."
+  },
+  {
+    "id": 20,
+    "quote": "The best way to show thanks is to wear it. Even if it's only once."
+  },
+  {
+    "id": 21,
+    "quote": "Take a vacation of your cell phone, internet and TV once a year."
+  },
+  {
+    "id": 22,
+    "quote": "Don't fill up on bread, no matter how good."
+  },
+  {
+    "id": 23,
+    "quote": "A handshake beats an autograph."
+  },
+  {
+    "id": 24,
+    "quote": "Don't linger in the doorway. In or out."
+  },
+  {
+    "id": 25,
+    "quote": "If you choose to go in drag, don't sell yourself short."
+  },
+  {
+    "id": 26,
+    "quote": "If you want to know what makes you unique, sit in on a caricature."
+  },
+  {
+    "id": 27,
+    "quote": "Never get your haircut the day of a special event."
+  },
+  {
+    "id": 28,
+    "quote": "Be mindful of what comes between you and the Earth. Always buy good shoes, tires and sheets."
+  },
+  {
+    "id": 29,
+    "quote": "Never eat lunch at your desk if you can avoid it."
+  },
+  {
+    "id": 30,
+    "quote": "When you're with new friends, don't just talk about old friends."
+  },
+  {
+    "id": 31,
+    "quote": "Eat lunch with the new kids."
+  },
+  {
+    "id": 32,
+    "quote": "When traveling, keep your wits about you. No matter where you are."
+  },
+  {
+    "id": 33,
+    "quote": "It's never too late for an apology."
+  },
+  {
+    "id": 34,
+    "quote": "Don't pose with booze. It's unbecoming."
+  },
+  {
+    "id": 35,
+    "quote": "If you have the right of way, TAKE IT."
+  },
+  {
+    "id": 36,
+    "quote": "You don't get to choose your own nickname."
+  },
+  {
+    "id": 37,
+    "quote": "When you marry someone, remember you marry their entire family."
+  },
+  {
+    "id": 38,
+    "quote": "Never push someone off a dock."
+  },
+  {
+    "id": 39,
+    "quote": "Under no circumstances should you ask a woman if she is pregnant."
+  },
+  {
+    "id": 40,
+    "quote": "It's not enough to be proud of your ancestry. Live up to it."
+  },
+  {
+    "id": 41,
+    "quote": "Don't make a scene. "
+  },
+  {
+    "id": 42,
+    "quote": "When giving a thank you speech, short and sweet is best."
+  },
+  {
+    "id": 43,
+    "quote": "Know when to ignore the camera."
+  },
+  {
+    "id": 44,
+    "quote": "Never gloat."
+  },
+  {
+    "id": 45,
+    "quote": "Invest in great luggage."
+  },
+  {
+    "id": 46,
+    "quote": "Make time for your mother on your birthday. It's a special day for her too."
+  },
+  {
+    "id": 47,
+    "quote": "When opening presents, no one likes a good guesser."
+  },
+  {
+    "id": 48,
+    "quote": "Sympathy is a crutch. Never fake a limp."
+  },
+  {
+    "id": 49,
+    "quote": "Give credit, take blame."
+  },
+  {
+    "id": 50,
+    "quote": "Suck it up every now and then."
+  },
+  {
+    "id": 51,
+    "quote": "Never be the last one in the pool."
+  },
+  {
+    "id": 52,
+    "quote": "Don't stare."
+  },
+  {
+    "id": 53,
+    "quote": "Address everyone that carries a firearm professionally."
+  },
+  {
+    "id": 54,
+    "quote": "Stand up to bullies. You only have to do it once."
+  },
+  {
+    "id": 55,
+    "quote": "If you've made your point, stop talking."
+  },
+  {
+    "id": 56,
+    "quote": "Admit it when you're wrong."
+  },
+  {
+    "id": 57,
+    "quote": "If you offer to help, don't quit until the job is done."
+  },
+  {
+    "id": 58,
+    "quote": "Look people in the eye when you thank them."
+  },
+  {
+    "id": 59,
+    "quote": "Thank the bus driver."
+  },
+  {
+    "id": 60,
+    "quote": "Never answer the phone at the dinner table."
+  },
+  {
+    "id": 61,
+    "quote": "Forgive yourself for your mistakes."
+  },
+  {
+    "id": 62,
+    "quote": "Know at least one good joke."
+  },
+  {
+    "id": 63,
+    "quote": "Don't boo. Even the ref is somebody's son."
+  },
+  {
+    "id": 64,
+    "quote": "Know how to cook one good meal."
+  },
+  {
+    "id": 65,
+    "quote": "Learn to drive manual / stick shift."
+  },
+  {
+    "id": 66,
+    "quote": "Be cool to younger kids. Reputations are built over a lifetime."
+  },
+  {
+    "id": 67,
+    "quote": "It's okay to go to the movies by yourself."
+  },
+  {
+    "id": 68,
+    "quote": "Dance with your mother and father."
+  },
+  {
+    "id": 69,
+    "quote": "Don't lose your cool. Especially at work."
+  },
+  {
+    "id": 70,
+    "quote": "Always thank the host."
+  },
+  {
+    "id": 71,
+    "quote": "If you don't understand, ask before it's too late."
+  },
+  {
+    "id": 72,
+    "quote": "Know the size of your boyfriend / girlfriend's clothes."
+  },
+  {
+    "id": 73,
+    "quote": "There is nothing wrong with a plain t-shirt."
+  },
+  {
+    "id": 74,
+    "quote": "Be a good listener. Don't just take your turn to talk."
+  },
+  {
+    "id": 75,
+    "quote": "Keep your word."
+  },
+  {
+    "id": 76,
+    "quote": "In college, always sit near the front. You'll stand out immediately and come grade time it will come in handy."
+  },
+  {
+    "id": 77,
+    "quote": "Carry your mother's bags. She carried you for nine months."
+  },
+  {
+    "id": 78,
+    "quote": "Be patient with airport security. They are just doing their job."
+  },
+  {
+    "id": 79,
+    "quote": "Don't be the talker in the movie."
+  },
+  {
+    "id": 80,
+    "quote": "The opposite sex likes people who shower."
+  },
+  {
+    "id": 81,
+    "quote": "You are what you do. Not what you say."
+  },
+  {
+    "id": 82,
+    "quote": "Learn to change a tire."
+  },
+  {
+    "id": 83,
+    "quote": "Be kind. Everyone has a hard fight ahead of them."
+  },
+  {
+    "id": 84,
+    "quote": "An hour with grandparents is time well spent. Ask for advice when you need it."
+  },
+  {
+    "id": 85,
+    "quote": "Don't litter."
+  },
+  {
+    "id": 86,
+    "quote": "If you have a sister, get to know her boyfriend. Your opinion is important."
+  },
+  {
+    "id": 87,
+    "quote": "You won't always be the strongest or fastest. But you can be the toughest."
+  },
+  {
+    "id": 88,
+    "quote": "Never call someone before 9AM or after and 9PM."
+  },
+  {
+    "id": 89,
+    "quote": "Buy the orange properties in Monopoly."
+  },
+  {
+    "id": 90,
+    "quote": "Make the little things count."
+  },
+  {
+    "id": 91,
+    "quote": "Always wear a bra to work."
+  },
+  {
+    "id": 92,
+    "quote": "There is a fine line between looking sultry and slutty. Find it."
+  },
+  {
+    "id": 93,
+    "quote": "You're never too old to need your mom."
+  },
+  {
+    "id": 94,
+    "quote": "Ladies, if you make the decision to wear heels on the first date, commit to keeping them on and keeping your trap shut about how much your feet kill."
+  },
+  {
+    "id": 95,
+    "quote": "Know the words to your national anthem."
+  },
+  {
+    "id": 96,
+    "quote": "Your dance moves might not be the best, but I promise making a fool of yourself is more fun than sitting on the bench alone."
+  },
+  {
+    "id": 97,
+    "quote": "Smile at strangers."
+  },
+  {
+    "id": 98,
+    "quote": "Make goals."
+  },
+  {
+    "id": 99,
+    "quote": "Being old is not dictated by your bedtime."
+  },
+  {
+    "id": 100,
+    "quote": "If you HAVE to fight, punch first and punch HARD."
+  }
+]

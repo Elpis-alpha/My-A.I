@@ -1,0 +1,502 @@
+[
+  {
+    "id": 1,
+    "quote": "If you want to achieve greatness stop asking for permission.",
+    "writer": " --Anonymous"
+  },
+  {
+    "id": 2,
+    "quote": "Things work out best for those who make the best of how things work out.",
+    "writer": " --John Wooden"
+  },
+  {
+    "id": 3,
+    "quote": "To live a creative life, we must lose our fear of being wrong.",
+    "writer": " --Anonymous"
+  },
+  {
+    "id": 4,
+    "quote": "If you are not willing to risk the usual you will have to settle for the ordinary.",
+    "writer": " --Jim Rohn"
+  },
+  {
+    "id": 5,
+    "quote": "Trust because you are willing to accept the risk, not because it's safe or certain.",
+    "writer": " --Anonymous"
+  },
+  {
+    "id": 6,
+    "quote": "Take up one idea. Make that one idea your life--think of it, dream of it, live on that idea. Let the brain, muscles, nerves, every part of your body, be full of that idea, and just leave every other idea alone. This is the way to success.",
+    "writer": " --Swami Vivekananda"
+  },
+  {
+    "id": 7,
+    "quote": "All our dreams can come true if we have the courage to pursue them.",
+    "writer": " --Walt Disney"
+  },
+  {
+    "id": 8,
+    "quote": "Good things come to people who wait, but better things come to those who go out and get them.",
+    "writer": " --Anonymous"
+  },
+  {
+    "id": 9,
+    "quote": "If you do what you always did, you will get what you always got.",
+    "writer": " --Anonymous"
+  },
+  {
+    "id": 10,
+    "quote": "Success is walking from failure to failure with no loss of enthusiasm.",
+    "writer": " --Winston Churchill"
+  },
+  {
+    "id": 11,
+    "quote": "Just when the caterpillar thought the world was ending, he turned into a butterfly.",
+    "writer": " --Proverb"
+  },
+  {
+    "id": 12,
+    "quote": "Successful entrepreneurs are givers and not takers of positive energy.",
+    "writer": " --Anonymous"
+  },
+  {
+    "id": 13,
+    "quote": "Whenever you see a successful person you only see the public glories, never the private sacrifices to reach them.",
+    "writer": " --Vaibhav Shah"
+  },
+  {
+    "id": 14,
+    "quote": "Opportunities don't happen, you create them.",
+    "writer": " --Chris Grosser"
+  },
+  {
+    "id": 15,
+    "quote": "Try not to become a person of success, but rather try to become a person of value.",
+    "writer": " --Albert Einstein"
+  },
+  {
+    "id": 16,
+    "quote": "Great minds discuss ideas; average minds discuss events; small minds discuss people.",
+    "writer": " --Eleanor Roosevelt"
+  },
+  {
+    "id": 17,
+    "quote": "I have not failed. I've just found 10,000 ways that won't work.",
+    "writer": " --Thomas A. Edison"
+  },
+  {
+    "id": 18,
+    "quote": "If you don't value your time, neither will others. Stop giving away your time and talents--start charging for it.",
+    "writer": " --Kim Garst"
+  },
+  {
+    "id": 19,
+    "quote": "A successful man is one who can lay a firm foundation with the bricks others have thrown at him.",
+    "writer": " --David Brinkley"
+  },
+  {
+    "id": 20,
+    "quote": "No one can make you feel inferior without your consent.",
+    "writer": " --Eleanor Roosevelt"
+  },
+  {
+    "id": 21,
+    "quote": "The whole secret of a successful life is to find out what is one's destiny to do, and then do it.",
+    "writer": " --Henry Ford"
+  },
+  {
+    "id": 22,
+    "quote": "If you're going through hell keep going.",
+    "writer": " --Winston Churchill"
+  },
+  {
+    "id": 23,
+    "quote": "The ones who are crazy enough to think they can change the world, are the ones who do.",
+    "writer": " --Anonymous"
+  },
+  {
+    "id": 24,
+    "quote": "Don't raise your voice, improve your argument.",
+    "writer": " --Anonymous"
+  },
+  {
+    "id": 25,
+    "quote": "What seems to us as bitter trials are often blessings in disguise.",
+    "writer": " --Oscar Wilde"
+  },
+  {
+    "id": 26,
+    "quote": "The meaning of life is to find your gift. The purpose of life is to give it away.",
+    "writer": " --Anonymous"
+  },
+  {
+    "id": 27,
+    "quote": "The distance between insanity and genius is measured only by success.",
+    "writer": " --Bruce Feirstein"
+  },
+  {
+    "id": 28,
+    "quote": "When you stop chasing the wrong things, you give the right things a chance to catch you.",
+    "writer": " --Lolly Daskal"
+  },
+  {
+    "id": 29,
+    "quote": "I believe that the only courage anybody ever needs is the courage to follow your own dreams.",
+    "writer": " --Oprah Winfrey"
+  },
+  {
+    "id": 30,
+    "quote": "No masterpiece was ever created by a lazy artist.",
+    "writer": " --Anonymous"
+  },
+  {
+    "id": 31,
+    "quote": "Happiness is a butterfly, which when pursued, is always beyond your grasp, but which, if you will sit down quietly, may alight upon you.",
+    "writer": " --Nathaniel Hawthorne"
+  },
+  {
+    "id": 32,
+    "quote": "If you can't explain it simply, you don't understand it well enough.",
+    "writer": " --Albert Einstein"
+  },
+  {
+    "id": 33,
+    "quote": "Blessed are those who can give without remembering and take without forgetting.",
+    "writer": " --Anonymous"
+  },
+  {
+    "id": 34,
+    "quote": "Do one thing every day that scares you.",
+    "writer": " --Anonymous"
+  },
+  {
+    "id": 35,
+    "quote": "What's the point of being alive if you don't at least try to do something remarkable.",
+    "writer": " --Anonymous"
+  },
+  {
+    "id": 36,
+    "quote": "Life is not about finding yourself. Life is about creating yourself.",
+    "writer": " --Lolly Daskal"
+  },
+  {
+    "id": 37,
+    "quote": "Nothing in the world is more common than unsuccessful people with talent.",
+    "writer": " --Anonymous"
+  },
+  {
+    "id": 38,
+    "quote": "Knowledge is being aware of what you can do. Wisdom is knowing when not to do it.",
+    "writer": " --Anonymous"
+  },
+  {
+    "id": 39,
+    "quote": "Your problem isn't the problem. Your reaction is the problem.",
+    "writer": " --Anonymous"
+  },
+  {
+    "id": 40,
+    "quote": "You can do anything, but not everything.",
+    "writer": " --Anonymous"
+  },
+  {
+    "id": 41,
+    "quote": "Innovation distinguishes between a leader and a follower.",
+    "writer": " --Steve Jobs"
+  },
+  {
+    "id": 42,
+    "quote": "There are two types of people who will tell you that you cannot make a difference in this world: those who are afraid to try and those who are afraid you will succeed.",
+    "writer": " --Ray Goforth"
+  },
+  {
+    "id": 43,
+    "quote": "Thinking should become your capital asset, no matter whatever ups and downs you come across in your life.",
+    "writer": " --A.P.J. Abdul Kalam"
+  },
+  {
+    "id": 44,
+    "quote": "I find that the harder I work, the more luck I seem to have.",
+    "writer": " --Thomas Jefferson"
+  },
+  {
+    "id": 45,
+    "quote": "The starting point of all achievement is desire.",
+    "writer": " --Napoleon Hill"
+  },
+  {
+    "id": 46,
+    "quote": "Success is the sum of small efforts, repeated day-in and day-out.",
+    "writer": " --Robert Collier"
+  },
+  {
+    "id": 47,
+    "quote": "If you want to achieve excellence, you can get there today. As of this second, quit doing less-than-excellent work.",
+    "writer": " --Thomas J. Watson"
+  },
+  {
+    "id": 48,
+    "quote": "All progress takes place outside the comfort zone.",
+    "writer": " --Michael John Bobak"
+  },
+  {
+    "id": 49,
+    "quote": "You may only succeed if you desire succeeding; you may only fail if you do not mind failing.",
+    "writer": " --Philippos"
+  },
+  {
+    "id": 50,
+    "quote": "Courage is resistance to fear, mastery of fear--not absence of fear.",
+    "writer": " --Mark Twain"
+  },
+  {
+    "id": 51,
+    "quote": "Only put off until tomorrow what you are willing to die having left undone.",
+    "writer": " --Pablo Picasso"
+  },
+  {
+    "id": 52,
+    "quote": "People often say that motivation doesn't last. Well, neither does bathing--that's why we recommend it daily.",
+    "writer": " --Zig Ziglar"
+  },
+  {
+    "id": 53,
+    "quote": "We become what we think about most of the time, and that's the strangest secret.",
+    "writer": " --Earl Nightingale"
+  },
+  {
+    "id": 54,
+    "quote": "The only place where success comes before work is in the dictionary.",
+    "writer": " --Vidal Sassoon"
+  },
+  {
+    "id": 55,
+    "quote": "Too many of us are not living our dreams because we are living our fears.",
+    "writer": " --Les Brown"
+  },
+  {
+    "id": 56,
+    "quote": "I find that when you have a real interest in life and a curious life, that sleep is not the most important thing.",
+    "writer": " --Martha Stewart"
+  },
+  {
+    "id": 57,
+    "quote": "It's not what you look at that matters, it's what you see.",
+    "writer": " --Anonymous"
+  },
+  {
+    "id": 58,
+    "quote": "The road to success and the road to failure are almost exactly the same.",
+    "writer": " --Colin R. Davis"
+  },
+  {
+    "id": 59,
+    "quote": "The function of leadership is to produce more leaders, not more followers.",
+    "writer": " --Ralph Nader"
+  },
+  {
+    "id": 60,
+    "quote": "Success is liking yourself, liking what you do, and liking how you do it.",
+    "writer": " --Maya Angelou"
+  },
+  {
+    "id": 61,
+    "quote": "As we look ahead into the next century, leaders will be those who empower others.",
+    "writer": " --Bill Gates"
+  },
+  {
+    "id": 62,
+    "quote": "A real entrepreneur is somebody who has no safety net underneath them.",
+    "writer": " --Henry Kravis"
+  },
+  {
+    "id": 63,
+    "quote": "The first step toward success is taken when you refuse to be a captive of the environment in which you first find yourself.",
+    "writer": " --Mark Caine"
+  },
+  {
+    "id": 64,
+    "quote": "People who succeed have momentum. The more they succeed, the more they want to succeed, and the more they find a way to succeed. Similarly, when someone is failing, the tendency is to get on a downward spiral that can even become a self-fulfilling prophecy.",
+    "writer": " --Tony Robbins"
+  },
+  {
+    "id": 65,
+    "quote": "When I dare to be powerful, to use my strength in the service of my vision, then it becomes less and less important whether I am afraid.",
+    "writer": " --Audre Lorde"
+  },
+  {
+    "id": 66,
+    "quote": "Whenever you find yourself on the side of the majority, it is time to pause and reflect.",
+    "writer": " --Mark Twain"
+  },
+  {
+    "id": 67,
+    "quote": "The successful warrior is the average man, with laser-like focus.",
+    "writer": " --Bruce Lee"
+  },
+  {
+    "id": 68,
+    "quote": "There is no traffic jam along the extra mile.",
+    "writer": " --Roger Staubach"
+  },
+  {
+    "id": 69,
+    "quote": "Develop success from failures. Discouragement and failure are two of the surest stepping stones to success.",
+    "writer": " --Dale Carnegie"
+  },
+  {
+    "id": 70,
+    "quote": "If you don't design your own life plan, chances are you'll fall into someone else's plan. And guess what they have planned for you? Not much.",
+    "writer": " --Jim Rohn"
+  },
+  {
+    "id": 71,
+    "quote": "If you genuinely want something, don't wait for it--teach yourself to be impatient.",
+    "writer": " --Gurbaksh Chahal"
+  },
+  {
+    "id": 72,
+    "quote": "Don't let the fear of losing be greater than the excitement of winning.",
+    "writer": " --Robert Kiyosaki"
+  },
+  {
+    "id": 73,
+    "quote": "If you want to make a permanent change, stop focusing on the size of your problems and start focusing on the size of you!",
+    "writer": " --T. Harv Eker"
+  },
+  {
+    "id": 74,
+    "quote": "You can't connect the dots looking forward; you can only connect them looking backwards. So you have to trust that the dots will somehow connect in your future. You have to trust in something--your gut, destiny, life, karma, whatever. This approach has never let me down, and it has made all the difference in my life.",
+    "writer": " --Steve Jobs"
+  },
+  {
+    "id": 75,
+    "quote": "Two roads diverged in a wood and I  took the one less traveled by, and that made all the difference.",
+    "writer": " --Robert Frost"
+  },
+  {
+    "id": 76,
+    "quote": "The number one reason people fail in life is because they listen to their friends, family, and neighbors.",
+    "writer": " --Napoleon Hill"
+  },
+  {
+    "id": 77,
+    "quote": "The reason most people never reach their goals is that they don't define them, or ever seriously consider them as believable or achievable. Winners can tell you where they are going, what they plan to do along the way, and who will be sharing the adventure with them.",
+    "writer": " --Denis Waitley"
+  },
+  {
+    "id": 78,
+    "quote": "In my experience, there is only one motivation, and that is desire. No reasons or principle contain it or stand against it.",
+    "writer": " --Jane Smiley"
+  },
+  {
+    "id": 79,
+    "quote": "Success does not consist in never making mistakes but in never making the same one a second time.",
+    "writer": " --George Bernard Shaw"
+  },
+  {
+    "id": 80,
+    "quote": "I don't want to get to the end of my life and find that I lived just the length of it. I want to have lived the width of it as well.",
+    "writer": " --Diane Ackerman"
+  },
+  {
+    "id": 81,
+    "quote": "You must expect great things of yourself before you can do them.",
+    "writer": " --Michael Jordan"
+  },
+  {
+    "id": 82,
+    "quote": "Motivation is what gets you started. Habit is what keeps you going.",
+    "writer": " --Jim Ryun"
+  },
+  {
+    "id": 83,
+    "quote": "People rarely succeed unless they have fun in what they are doing.",
+    "writer": " --Dale Carnegie"
+  },
+  {
+    "id": 84,
+    "quote": "There is no chance, no destiny, no fate, that can hinder or control the firm resolve of a determined soul.",
+    "writer": " --Ella Wheeler Wilcox"
+  },
+  {
+    "id": 85,
+    "quote": "Our greatest fear should not be of failure but of succeeding at things in life that don't really matter.",
+    "writer": " --Francis Chan"
+  },
+  {
+    "id": 86,
+    "quote": "You've got to get up every morning with determination if you're going to go to bed with satisfaction.",
+    "writer": " --George Lorimer"
+  },
+  {
+    "id": 87,
+    "quote": "A goal is not always meant to be reached; it often serves simply as something to aim at.",
+    "writer": " -- Bruce Lee"
+  },
+  {
+    "id": 88,
+    "quote": "Success is ... knowing your purpose in life, growing to reach your maximum potential, and sowing seeds that benefit others.",
+    "writer": " --John C. Maxwell"
+  },
+  {
+    "id": 89,
+    "quote": "Be miserable. Or motivate yourself. Whatever has to be done, it's always your choice.",
+    "writer": " --Wayne Dyer"
+  },
+  {
+    "id": 90,
+    "quote": "To accomplish great things, we must not only act, but also dream, not only plan, but also believe.",
+    "writer": " --Anatole France"
+  },
+  {
+    "id": 91,
+    "quote": "Most of the important things in the world have been accomplished by people who have kept on trying when there seemed to be no help at all.",
+    "writer": " --Dale Carnegie"
+  },
+  {
+    "id": 92,
+    "quote": "You measure the size of the accomplishment by the obstacles you had to overcome to reach your goals.",
+    "writer": " --Booker T. Washington"
+  },
+  {
+    "id": 93,
+    "quote": "Real difficulties can be overcome; it is only the imaginary ones that are unconquerable.",
+    "writer": " --Theodore N. Vail"
+  },
+  {
+    "id": 94,
+    "quote": "It is better to fail in originality than to succeed in imitation.",
+    "writer": " --Herman Melville"
+  },
+  {
+    "id": 95,
+    "quote": "What would you do if you weren't afraid.",
+    "writer": " --Spencer Johnson"
+  },
+  {
+    "id": 96,
+    "quote": "Little minds are tamed and subdued by misfortune; but great minds rise above it.",
+    "writer": " --Washington Irving"
+  },
+  {
+    "id": 97,
+    "quote": "Failure is the condiment that gives success its flavor.",
+    "writer": " --Truman Capote"
+  },
+  {
+    "id": 98,
+    "quote": "Don't let what you cannot do interfere with what you can do.",
+    "writer": " --John R. Wooden"
+  },
+  {
+    "id": 99,
+    "quote": "You may have to fight a battle more than once to win it.",
+    "writer": " --Margaret Thatcher"
+  },
+  {
+    "id": 100,
+    "quote": "A man can be as great as he wants to be. If you believe in yourself and have the courage, the determination, the dedication, the competitive drive and if you are willing to sacrifice the little things in life and pay the price for the things that are worthwhile, it can be done.",
+    "writer": " --Vince Lombardi"
+  }
+]

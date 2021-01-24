@@ -1,0 +1,1670 @@
+@font-face {
+  src: url(fonts/Amatath.ttf);
+  font-family: mainFont;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  font-size: .9rem;
+}
+
+body{
+  font-family: mainFont;
+  background-color: rgb(207, 207, 207);
+}
+
+svg{
+  height: inherit;
+  width: inherit;
+}
+
+i{
+  height: 1rem;
+  cursor: pointer;
+  display: inline-block;
+  z-index: 1;
+}
+
+i svg{
+  z-index: -5;
+}
+
+div.home{
+  display: none;
+}
+
+div.alert-advice{
+  display: none;
+}
+
+div.to-do-timeline{
+  display: none;
+}
+
+div.say-something{
+  display: none;
+}
+
+div.settings-p{
+  display: none;
+}
+
+div.home.show{
+  display: flex;
+}
+
+div.alert-advice.show{
+  display: block;
+}
+
+div.to-do-timeline.show{
+  display: block;
+}
+
+div.say-something.show{
+  display: block;
+}
+
+div.settings-p.show{
+  display: block;
+}
+
+div.home{
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+  overflow: hidden;
+}
+
+div.home.show-3{
+  overflow: visible;
+}
+
+div.home  div.home-contents, div.home  div.home-contents > ul{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+div.home h1{
+  margin: 0 auto;
+  margin-bottom: .5rem;
+  font-size: 2rem;
+  border-bottom: 1px solid grey;
+  width: 95%;
+  text-align: center;
+}
+
+div.home h1 span.begin-hello{
+  display: block;
+  padding-bottom: .5rem;
+  font-size: 2rem;
+}
+
+div.home h1 span.begin-hello span{
+  padding-bottom: .5rem;
+  font-size: 1.9rem;
+}
+
+div.home  div.home-contents > ul > li{
+  padding: .5rem;
+  margin: .5rem;
+  border: 1px solid transparent;
+  list-style-type: none;
+  border-radius: 1rem;
+  padding-left: 1rem;
+  width: 80%;
+  cursor: pointer;
+  margin-top: 1.2rem;
+  transform: scale(2);
+  box-shadow: 0 0 3px .5px black;
+  transition: margin 1s, transform 1s, box-shadow 1s, border 1s;
+}
+
+div.home  div.home-contents > ul > li span{
+  display: inline-flex;
+  background-color: red;
+  width: 1rem; height: 1rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: white;
+}
+
+div.home  div.home-contents > ul > li span#blue{
+  background-color: blue;
+}
+
+div.home  div.home-contents > ul > li span#green{
+  background-color: green;
+}
+
+div.home  div.home-contents > ul > li span#orange{
+  background-color: orange;
+}
+
+div.home.show-2  div.home-contents > ul > li:hover{
+  border: 1px solid transparent;
+  box-shadow: 0 0 4px 1px black;
+}
+
+div.elipses{
+  display: inline-flex;
+  position: absolute;
+  right: 0; top: 0;
+  height: 100%;
+  width: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  border-bottom-right-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+div.elipses i{
+  opacity: .5;
+  width: 50%;
+  height: 100%;
+  cursor: pointer;
+  z-index: -1;
+}
+
+div.elipses:hover{
+  background: linear-gradient(to right, transparent, grey);
+}
+
+div.elipses:hover i{
+  opacity: 1;
+}
+
+div.elipses div.elip-info{
+  position: absolute;
+  display: none;
+  background-color: rgb(235, 235, 235);
+  box-shadow: 1px 0 4px 1px;
+  opacity: 1;
+  z-index: 10;
+  top: 0; right: 0;
+  flex-direction: column;
+}
+
+div.elipses div.elip-info li{
+  list-style-type: none;
+  padding: .5rem 1rem;
+  white-space: pre;
+  font-size: .7rem;
+}
+
+div.elipses div.elip-info li:hover{
+  background-color: rgb(194, 194, 194);
+}
+
+div.elipses div.elip-info.show{
+  display: flex;
+}
+
+div.message-holder{
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  display: none;
+  /* width: 100vw; */
+  height: 100vh;
+  z-index: 100;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+}
+
+div.message-holder div.message-blur{
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  display: flex;
+  /* width: 100vw; */
+  height: 100vh;
+  z-index: 101;
+  background-color: rgba(61, 61, 61, 0.548);
+}
+
+div.message-holder div.message{
+  z-index: 105;
+  background-color: rgba(207, 207, 207, 1);
+  padding: 1rem;
+  border-radius: 1rem;
+  min-width: 65vw;
+  text-align: center;
+  box-shadow: 0 0 15px 2px black;
+}
+
+span#mess-cancel{
+  position: absolute;
+  display: none;
+  width: 2.6rem;
+  top: 0;
+  right: 0;
+  padding: 1rem 1rem 0 0;
+  cursor: pointer;
+  z-index: 106;
+  fill: red;
+}
+
+span#mess-cancel svg{
+  z-index: -1;
+}
+
+span#mess-cancel:hover{
+  fill: blue;
+}
+
+div.message-holder.show{
+  display: flex;
+  position: fixed;
+}
+
+div.message-holder.x-show{
+  display: flex;
+  position: fixed;
+}
+
+div.message-holder.x-show.bubble div.message{
+  transform: scale(1.01);
+}
+
+div.message-holder.x-show span#mess-cancel{
+  display: none;
+}
+
+div.small-message-holder{
+  position: fixed;
+  top: 0; 
+  /* bottom: 0; */
+  /* left: 0;  */
+  right: 0;
+  display: none;
+  /* height: 100vh; */
+  height: auto;
+  z-index: 320;
+  align-items: flex-start;
+  justify-content: flex-end;
+  /* padding: 1rem 1rem; */
+}
+
+div.small-message-holder div.small-message-blur{
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  display: none;
+  height: 100vh;
+  z-index: 121;
+}
+
+@keyframes sm-messg-top {
+  0%{top: -3rem}
+  100%{top: 1rem}
+}
+
+@keyframes sm-messg-topS {
+  0%{top: -3rem}
+  100%{top: 1.5rem}
+}
+
+@keyframes sm-messg-topX {
+  0%{top: -3rem}
+  100%{top: 1rem}
+}
+
+div.small-message-holder.show div.small-message{
+  z-index: 125;
+  background-color: rgba(207, 207, 207, 1);
+  padding: 1.5rem 1rem;
+  border-radius: 1rem;
+  min-width: 25vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: 0 0 15px 2px black;
+  max-width: 50%;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  transition: top .3s;
+  animation: sm-messg-top .3s 1;
+}
+
+span#small-mess-cancel{
+  position: absolute;
+  width: .7rem;
+  top: 1.5rem;
+  right: 1.5rem;
+  cursor: pointer;
+  z-index: 126;
+  fill: red;
+  animation: sm-messg-topS .3s 1;
+  /* display: none; */
+}
+
+span#small-mess-cancel svg{
+  z-index: -1;
+}
+
+span#small-mess-cancel:hover{
+  fill: blue;
+}
+
+div.small-message-holder.show{
+  display: flex;
+}
+
+form.get-s-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+form.get-s-form div.qa-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+form.get-s-form div.qa-box input{
+  margin-top: .2rem;
+  width: 80%;
+  padding: .1rem;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  border-bottom: 3px solid black;
+  text-align: center;
+  font-family: inherit;
+  font-size: .7rem;
+  font-weight: 100;
+  transition: border 1s;
+}
+
+form.get-s-form div.qa-box input:focus{
+  border-color: rgb(1, 156, 1);
+}
+
+form.get-s-form div.qa-box small{
+  position: absolute;
+  top: 100%;
+  font-size: .5rem;
+  left: 0;right: 0;
+  opacity: 0;
+  color: green;
+  transition: opacity 1s, color .5s;
+}
+
+form.get-s-form div.qa-box input:focus + small{
+  opacity: 1;
+}
+
+form.get-s-form div.qa-box.bad input{
+  border-bottom: 3px solid red;
+}
+
+form.get-s-form div.qa-box.bad small{
+  color: red;
+  opacity: 1;
+}
+
+form.get-s-form div.sa-box{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+form.get-s-form div.sa-box a{
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  background-color: grey;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  height: 2rem;
+  margin-right: 1rem;
+  outline: 0;
+  cursor: pointer;
+  transition: box-shadow 1s;
+}
+
+form.get-s-form div.sa-box input{
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border: 0;
+  background-color: blue;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+  flex: 1;
+  margin-left: 1rem;
+  outline: 0;
+  cursor: pointer;
+  transition: box-shadow 1s;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+form.get-s-form div.sa-box a:hover,
+form.get-s-form div.sa-box input:hover{
+  box-shadow: 0 0 5px 1px;
+}
+
+button.small-btt{
+  border: 0;
+  background-color: rgb(48, 91, 223);
+  height: 2rem;
+  outline: 0;
+  cursor: pointer;
+  transition: box-shadow 1s;
+  margin-top: .5rem;
+  width: 100%;
+  border-radius: 1rem;
+  font-family: inherit;
+  color: white;
+}
+
+button.small-btt:hover{
+  box-shadow: 0 0 5px 1px black;
+}
+
+form.get-s-form div.qa-box div{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: .5rem;
+}
+
+form.get-s-form div.qa-box div input{
+  flex: 1;
+  width: auto;
+  margin-right: 1rem;
+  margin-left: .4rem;
+}
+
+div.top-nav{
+  z-index: 80;
+  display: none;
+}
+
+div.top-nav.show{
+  display: block;
+}
+
+div.top-nav > nav{
+  display: flex;
+}
+
+div.top-nav > nav > ul{
+  display: flex;
+  flex: 1;
+}
+
+div.top-nav > nav > ul li{
+  list-style-type: none;
+  flex: 1;
+  text-align: center;
+  padding: 1rem 0;
+  padding-bottom: .5rem;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+
+div.top-nav > nav > ul li.active{
+  /* border: 2px solid black; */
+  border-bottom: 1px solid black;
+  /* border-top-left-radius: 1rem; */
+  /* border-top-right-radius: 1rem; */
+}
+
+div.top-nav > nav > ul li:last-child{
+  border-top-right-radius: 0rem;
+  border-right: 0;
+}
+
+div.top-nav > nav > ul li:first-child{
+  border-top-left-radius: 0rem;
+  border-left: 0;
+}
+
+
+/* Settings Page */
+div.settings-p.show{
+  display: flex;
+  padding: .25rem;
+  flex-direction: column;
+}
+
+div.settings-p > section{
+  border-bottom: 1px solid black;
+  padding: 1rem 0;
+}
+
+div.settings-p > section:last-of-type{
+  border-bottom: 0 none;
+}
+
+div.settings-p > section:first-child{
+  padding-top: 0;
+}
+
+div.settings-p > section > h2{
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+div.settings-p > section > h2 i{
+  padding-left: .2rem;
+}
+
+div.settings-p > section > div.set-form{
+  padding: .5rem .3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+div.settings-p > section > div.set-form input,
+div.settings-p > section > div.set-form textarea{
+  padding: .5rem;
+  border-radius: .5rem;
+  margin-top: .2rem;
+  border: 0;
+  outline: 0;
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.377);
+  font-family: inherit;
+  transition: background-color 1s;
+}
+
+div.settings-p > section > div.set-form input[type=submit]:hover{
+  cursor: pointer;
+  background-color: green;
+}
+
+div.settings-p > section div.set-form.warn input,
+div.settings-p > section div.set-form.warn textarea{
+  background-color: rgba(238, 255, 0, 0.459);
+}
+
+div.settings-p > section div.set-form.bad input,
+div.settings-p > section div.set-form.bad textarea{
+  background-color: rgba(255, 0, 0, 0.459);
+}
+
+div.settings-p > section div.set-form input:focus,
+div.settings-p > section div.set-form textarea:focus{
+  background-color: rgba(0, 128, 0, 0.548);
+}
+
+div.settings-p > section div.set-form.bad input:focus,
+div.settings-p > section div.set-form.bad textarea:focus{
+  background-color: rgba(255, 0, 0, 0.459);
+}
+
+div.settings-p > section div.set-form.warn input:focus,
+div.settings-p > section div.set-form.warn textarea:focus{
+  background-color: rgba(238, 255, 0, 0.459);
+}
+
+div.settings-p > section > div.set-form div.form-half{
+  display: flex;
+}
+
+div.settings-p > section > div.set-form div.form-half div{
+  margin-right: 1rem;
+  padding-top: .3rem;
+  flex: 1;
+}
+
+div.settings-p > section > div.set-form div.form-half div:last-child{
+  margin-right: 0;
+}
+
+div.settings-p > section > div.set-form div.form-half div input{
+  width: 100%;
+}
+
+div.settings-p > section > div.set-form div.form-half div label{
+  font-size: .7rem;
+}
+
+i.normset-imp{
+  height: .7rem;
+}
+
+div.settings-p > section > div.set-form span.doll + input{
+  padding-left: 2rem;
+}
+
+div.settings-p > section > div.set-form span.doll{
+  position: absolute;
+  bottom: 0;
+  margin-bottom: .5rem;
+  height: 1.9rem;
+  width: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid black;
+  background-color: grey;
+  border-top-left-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+  border: 0;
+}
+
+div.settings-p > section > div.set-form div.inner-add > p{
+  font-weight: bold;
+  height: 3rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  padding-top: 1rem;
+}
+
+div.settings-p > section > div.set-form div.inner-add > p i{
+  padding-left: .2rem;
+}
+
+div.settings-p > section > div.set-form div.inner-add > span.show-bform{
+  font-size: .8rem;
+  border: 1px solid black;
+  padding: .5rem;
+  border-radius: .5rem;
+  position: absolute;
+  top: 0; right: 0;
+  cursor: pointer;
+}
+
+div.settings-p > section > div.set-form div.inner-add > form{
+  display: none;
+}
+
+div.settings-p > section > div.set-form div.inner-add > form.show{
+  display: block;
+  padding: .4rem;
+}
+
+div.settings-p > section > div.set-form div.inner-add > div ul li{
+  list-style-type: none;
+  padding: .2rem;
+  margin-left: .5rem;
+  border-bottom: 1px solid grey;
+}
+
+div.settings-p > section > div.set-form div.inner-add > div ul li p{
+  display: flex;
+  justify-content: space-between;
+}
+
+div.settings-p > section > div.set-form div.inner-add > div ul li p span.del{
+  color: red;
+  cursor: pointer;
+}
+
+div.settings-p > section > div.set-form div.inner-add > div ul li p span.del:hover{color: green}
+
+
+/* Timeline */
+div.timeline-container{
+  display: flex;
+  padding: 1rem;
+  padding-top: 1.5rem;
+  flex-direction: column;
+  /* background-color: red; */
+}
+
+div.timeline{
+  border: 1px solid green;
+  display: flex;
+  width: 100%;
+  height: 1.5rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+div.timeline > div.covered-timeline{
+  position: absolute;
+  top: 0; left: 0;
+  bottom: 0;
+  width: 0px;
+  background-color: rgb(9, 126, 9);
+  border-radius: 1rem;
+  transition: width 2s;
+}
+
+div.timeline > div.hidden-timeline{
+  position: absolute;
+  top: 0; left: 0;
+  bottom: 0;
+  width: 0%;
+  background-color: rgba(72, 29, 189, 0.685);
+  border-radius: 1rem;
+  transition: width .5s;
+  z-index: 2;
+}
+
+div.hover-timeline{
+  position: absolute;
+  top: 0; left: 0; 
+  width: 0%;
+  text-align: right;
+  transition: opacity 1s;
+  min-width: fit-content;
+  opacity: 0;
+  z-index: -1;
+}
+
+div.hover-timeline span{
+  background-color: #72bd9e;
+  border: 1px solid black;
+  padding: .1rem;
+  display: inline-flex;
+  height: 1.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+div.hover-timeline.show{
+  z-index: 3;
+  opacity: 1;
+}
+
+div.timeline-change-date{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+div.timeline-change-date i{
+  cursor: pointer;
+  height: 1.5rem;
+}
+
+div.calen-holder{
+  opacity: 0;
+  z-index: -2;
+  position: absolute;
+  left: 0; top: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .5rem;
+  transition: opacity .5s;
+}
+
+div.calen-holder.show{
+  z-index: 5;
+  opacity: 1;
+}
+
+div.calen-holder.xshow{
+  z-index: 5;
+  opacity: 1;
+}
+
+div.calen-holder div.calen::after{
+  content: "";
+  position: absolute;
+  bottom: 100%; left: 50%;
+  border-width: 7px;
+  margin-left: -7px;
+  border-style: solid;
+  border-color: transparent transparent rgb(155, 154, 154) transparent;
+}
+
+div.calen-holder div.calen{
+  border-radius: .5rem;
+  background-color: rgb(155, 154, 154);
+  padding: .5rem;
+}
+
+div.calen-holder div.calen div.the-calender-info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem;
+  margin-bottom: .3rem;
+  border-bottom: 1px solid rgb(58, 58, 58);
+}
+
+div.the-calender-info .calen-month,
+div.the-calender-info .calen-year{
+  cursor: pointer;
+}
+
+div.the-calender table td{
+  cursor: alias;
+  padding: .2rem;
+  text-align: center;
+  border-bottom: 1px solid transparent;
+}
+
+div.the-calender table th{
+  padding: .2rem;
+  text-align: center;
+  font-weight: normal;
+}
+
+div.the-calender table td:hover{ 
+  border-bottom: 1px solid black;
+}
+
+div.the-calender table td.active{ 
+  border-bottom: 1px solid green;
+}
+
+div.the-calender table td.xactive{ 
+  border-bottom: 1px solid orange;
+}
+
+div.the-calender table td.clouded{
+  opacity: .2;
+}
+
+div.calen-monyea-inp{
+  position: absolute;
+  width: 100%;
+  bottom: 100%;
+  left: 0; right: 0;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+}
+
+div.calen-monyea-inp span{
+  width: 40%;
+  padding: .5rem;
+  background-color: black;
+  border-radius: .5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  z-index: -2;
+}
+
+div.calen-monyea-inp span input{
+  width: 100%;
+  border: 0; outline: 0;
+  background-color: transparent;
+  border-bottom: 2px solid white;
+  color: white;
+  font-family: inherit;
+  font-size: .8rem;
+}
+
+div.calen-monyea-inp span::after{
+  content: "";
+  position: absolute;
+  top: 100%; 
+  border-width: 7px;
+  margin-left: -7px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+div.calen-monyea-inp span[class*=month]::after{
+  left: 1rem;
+}
+
+div.calen-monyea-inp span[class*=year]::after{
+  right: 1rem;
+}
+
+div.calen-monyea-inp[class*=show]{
+  display: flex;
+}
+
+div.calen-monyea-inp.show-mon span[class*=month]{
+  opacity: 1;
+  z-index: 2;
+}
+
+div.calen-monyea-inp.show-yea span[class*=year]{
+  opacity: 1;
+  z-index: 2;
+}
+
+div.date-details{
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 10px dotted black;
+}
+
+div.date-details span{
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+div.date-details div.detail-day-date{
+  width: 50%;
+  padding: 1rem;
+}
+
+div.date-details div.detail-month-year{
+  width: 50%;
+  text-align: right;
+  padding: 1rem;
+}
+
+div.date-details div.detail-time{
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+div.date-details div.detail-time span{
+  padding: 1rem;
+}
+
+div.timeline-reset{
+  position: absolute;
+  top: 0; right: 0;
+  padding-right: 1rem;
+  z-index: 2;
+}
+
+div.timeline-reset button{
+  cursor: pointer;
+  font-size: inherit;
+  font-family: inherit;
+  padding: .1rem .5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid green;
+  background-color: green;
+  color: white;
+  outline: 0;
+  border-radius: 3px;
+  transition: background-color 1s, color 1s;
+}
+
+div.timeline-reset button:hover{
+  background-color: white;
+  color: black;
+}
+
+div.timelist-table{
+  padding-top: 1rem;
+  display: none;
+}
+
+table.organised-table{
+  padding: .5rem;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table.organised-table tr{
+  width: 100%;
+}
+
+table.organised-table thead tr{
+  background-color: rgb(108, 108, 108);
+  border-bottom: 1px solid black;
+}
+
+table.organised-table tbody tr:nth-child(even){
+  background-color: rgb(172, 171, 171);
+}
+
+table.organised-table tbody tr:nth-child(odd){
+  background-color: grey;
+}
+
+table.organised-table td,table.organised-table th{
+  text-align: center;
+  padding: 1rem 0;
+}
+
+table.organised-table tbody tr.active{
+  background-color: green;
+}
+
+div.tasktime-tabs{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 1rem;
+  padding: 0 1rem;
+}
+
+div.tasktime-tabs div{
+  margin: 0 1rem;
+  padding: 1rem 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  flex: 1;
+  opacity: .4;
+  border-radius: 1rem 1rem 0 0;
+  border-bottom: 3px solid rgba(0, 0, 0, 0);
+}
+
+div.tasktime-tabs div:hover{
+  border-bottom: 3px solid rgba(0, 0, 0, 0.39);
+  opacity: .7;
+}
+
+div.tasktime-tabs div.active{
+  border-bottom: 3px solid black;
+  opacity: 1;
+}
+
+div.timelist-table.show{
+  display: block;
+}
+
+div.say-something.show{
+  display: flex;
+}
+
+div.say-something section{
+  flex: 5;
+  padding: 1rem;
+}
+
+div.say-something aside{
+  flex: 2;
+  padding: 1rem;
+}
+
+div.say-something li{
+  list-style-type: none;
+}
+
+div.quotesuses > header{
+  text-align: center;
+  padding: .5rem;
+  padding-top: 0;
+  margin-bottom: 0.8rem;
+  border-bottom: 1px solid rgb(90, 90, 90);
+  font-size: 1.2rem;
+}
+
+div.quotesuses ul li{
+  padding-bottom: .6rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.quotesuses ul li div{
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid grey;
+  padding-bottom: .6rem;
+  width: 80%;
+}
+
+div.quotesuses ul li:last-child div{
+  border-bottom: 0 none;
+}
+
+div.quotesuses ul li div span.name{
+  padding-bottom: .3rem;
+}
+
+div.quotesuses ul li div span.Number{
+  padding-bottom: .5rem;
+}
+
+div.quotesuses ul li div span.status{
+  padding-bottom: .3rem;
+}
+
+div.quotesuses ul li div span.action{
+  fill: green;
+}
+
+div.quotesuses ul li div span.action span.tooltixp{
+  display: none;
+  background-color: darkblue;
+  color: white;
+  position: absolute;
+  top: 120%; left: 0;
+  z-index: 5;
+  border-radius: .5rem;
+  padding: .3rem;
+  width: 100%;
+}
+
+div.quotesuses ul li div span.action:hover span.tooltixp{
+  display: inline;
+}
+
+div.quotesuses ul li div span.action span.tooltixp::after{
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  border-width: 5px;
+  margin-left: -5px;
+  border-color: transparent transparent darkblue transparent;
+  border-style: solid;
+}
+
+div.quotesuses ul li div input{
+  background-color: transparent;
+  border: 0 none;
+  border-bottom: 1px solid black;
+  width: 2rem;
+  text-align: center;
+  outline: 0;
+  padding-bottom: .1rem;
+}
+
+section ul.quote-section-ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+section ul.quote-section-ul img{
+  width: 30%;
+  padding-top: 1rem;
+}
+
+section ul.quote-section-ul li{
+  padding-bottom: 1rem;
+  width: 100%;
+}
+
+section ul.quote-section-ul li span.from{
+  display: block;
+  text-align: right;
+  font-size: .7rem;
+}
+
+section ul.imp-quote-section-ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+section ul.imp-quote-section-ul img{
+  width: 30%;
+  padding-top: 2rem;
+}
+
+section ul.imp-quote-section-ul > li{
+  text-align: center;
+  border-bottom: 1px solid grey;
+  margin-bottom: .5rem;
+  padding-bottom: .4rem;
+  width: 100%;
+  list-style-type: none;
+}
+
+section ul.imp-quote-section-ul > li:last-child{
+  border-bottom: 0 none;
+}
+
+section ul.imp-quote-section-ul > li:first-of-type{
+  text-align: left;
+  border-bottom: 0 none;
+}
+
+section ul.imp-quote-section-ul > li li{
+  padding: .5rem 0 .5rem 0rem;
+  text-align: left;
+  margin-left: 2rem;
+}
+
+section ul.imp-quote-section-ul div.set-form{
+  display: flex;
+  flex-direction: column;
+}
+
+section ul.imp-quote-section-ul div.set-form input{
+  padding: .5rem;
+  border-radius: .5rem;
+  margin-top: .2rem;
+  border: 0;
+  outline: 0;
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.377);
+  font-family: inherit;
+}
+
+section ul.imp-quote-section-ul div.set-form div.form-half{
+  display: flex;
+}
+
+section ul.imp-quote-section-ul div.set-form div.form-half div{
+  margin-right: 1rem;
+  padding-top: .3rem;
+  flex: 1;
+}
+
+section ul.imp-quote-section-ul div.set-form div.form-half div input{
+  width: 100%;
+}
+
+section ul.imp-quote-section-ul div.set-form div.form-half div label{
+  font-size: .7rem;
+}
+
+span#money-checker{
+  display: block;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+div.imp-title{
+  text-align: center;
+  font-size: 1.1rem;
+  text-decoration: underline;
+}
+
+div.small-nav{
+  position: fixed;
+  top: 2.7rem; right: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #cfcfcf;
+  border-radius: .7rem;
+  box-shadow: 0 0 5px 1px black;
+  margin-right: .5rem;
+  margin-top: .5rem;
+  z-index: 300;
+
+  height: 2.2rem;
+  transition: height 1s;
+  overflow: hidden;
+}
+
+div.small-nav div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+
+}
+
+div.small-nav > div > div{
+  padding: .5rem;
+}
+
+div.small-nav i{
+  height: 1.4rem;
+  fill: brown;
+}
+
+div.small-nav div.sn-calender{
+  display: none;
+  position: absolute;
+  right: 100%;
+  box-shadow: 0 0 4px 1px;
+  height: auto;
+  background-color: white;
+  margin-right: 1rem;
+}
+
+div.sn-calen div.sn-the-calender-info{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem;
+  flex-direction: row;
+  margin-bottom: .3rem;
+  border-bottom: 1px solid rgb(58, 58, 58);
+}
+
+div.sn-the-calender table td{
+  cursor: alias;
+  padding: .2rem;
+  text-align: center;
+  border-bottom: 1px solid transparent;
+}
+
+div.sn-the-calender table th{
+  padding: .2rem;
+  text-align: center;
+  font-weight: normal;
+}
+
+div.sn-the-calender table td.active{ 
+  border-bottom: 1px solid green;
+}
+
+div.sn-the-calender table td.clouded{
+  opacity: .4;
+}
+
+div.small-nav div.sn-mail-box{
+  display: none;
+  position: absolute;
+  right: 100%;
+  box-shadow: 0 0 4px 1px;
+  height: auto;
+  background-color: white;
+  margin-right: 1rem;
+  text-align: left;
+  width: 50vw;
+}
+
+div.small-nav div.sn-mail-box div{
+  padding: 0;
+  display: block;
+}
+
+div.small-nav div.sn-mail-box div.sn-mail-header{
+  padding: .5rem;
+  padding-bottom: 0;
+}
+
+div.small-nav div.sn-mail-box div.form-box{
+  padding: .7rem;
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+div.small-nav div.sn-mail-box div.form-box input{
+  background-color: transparent;
+  border: 0; outline: 0;
+  border-bottom: 1px solid black;
+  font-family: inherit;
+  font-size: .8rem;
+  width: 100%;
+}
+
+div.small-nav div.sn-mail-box div.form-box textarea{
+  background-color: transparent;
+  border: 0; outline: 0;
+  font-family: inherit;
+  font-size: .8rem;
+  border: 1px solid rgb(61, 61, 61);
+  width: 100%;
+  padding: .3rem;
+  border-radius: .3rem;
+}
+
+div.small-nav div.sn-mail-box input[type=submit]{
+  border: 0; outline: 0;
+  font-family: inherit;
+  font-size: .8rem;
+  border: 1px solid rgb(61, 61, 61);
+  border-radius: .3rem;
+  margin: .7rem;
+  padding: .2rem .5rem;
+  cursor: pointer;
+  transition: border .5s, box-shadow .5s;
+}
+
+div.small-nav div.sn-mail-box input[type=submit]:hover{
+  border: 1px solid white;
+  box-shadow: 0 0 5px .5px;
+}
+
+div.small-nav div.sn-mail-box div.sn-mail-others{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: .2rem .5rem 1rem .5rem;
+  flex-wrap: wrap;
+}
+
+div.small-nav div.sn-mail-box div.sn-mail-others i{
+  padding: .2rem;
+  fill: blue;
+}
+
+div.small-nav div.sn-mail-box.show{
+  display: block;
+}
+
+div.small-nav div.sn-calender.show{
+  display: block;
+}
+
+@keyframes transSmallNav{
+  0%{overflow: hidden;}
+  99%{overflow: hidden;}
+  100%{overflow: visible;}
+}
+
+div.small-nav:hover, div.small-nav.show{
+  height: 6.8rem;
+  overflow: visible;
+  animation: transSmallNav 1s 1;
+}
+
+span.right-rollhello{
+  background-color: #cfcfcf;
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  border-bottom: 2px solid #cfcfcf;
+  box-sizing: content-box;
+  top: 0; right: 0; bottom: 0;
+  transition: width 3s;
+}
+
+span.left-rollhello{
+  background-color: #cfcfcf;
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  top: 0; left: 0; bottom: 0;
+  border-bottom: 2px solid #cfcfcf;
+  box-sizing: content-box;
+  transition: width 3s;
+}
+
+div.home.show-1 h1 > span.right-rollhello,
+div.home.show-1 h1 > span.left-rollhello{
+  width: 0;
+}
+
+div.home div.home-contents > ul{
+  transition: margin 2s;
+}
+
+div.home div.home-contents{
+  overflow: hidden;
+}
+
+div.home.show-2 div.home-contents{
+  overflow: visible;
+}
+
+div.home.show-2 div.home-contents > ul > li{
+  margin: .5rem;
+  border: 1px solid black;
+  box-shadow: 0 0 0px 0px black;
+  transform: scale(1);
+}
+
+div.quotesuses > header span{
+  display: none;
+}
+
+@media screen and (max-width: 400px) {
+
+  *{
+    font-size: .8rem;
+  }
+
+  section ul.imp-quote-section-ul > li li {
+    margin-left: .8rem;
+  }
+
+  div.date-details span{
+    font-size: .9rem;
+  }
+
+  div.timeline-change-date i{
+    height: 1.3rem;
+  }
+
+  div.timeline{
+    height: 1.2rem;
+  }
+
+  table.organised-table td:first-child, 
+  table.organised-table th:first-child, 
+  table.organised-table th:last-child, 
+  table.organised-table td:last-child{
+    display: none;
+  }
+
+  div.say-something.show{
+    flex-direction: column;
+  }
+
+  div.say-something section{
+    order: 2;
+  }
+
+  div.say-something aside{
+    order: 1;
+  }
+
+  div.say-something aside{
+    padding-bottom: 0;
+  }
+
+  div.say-something section {
+    flex: 5;
+    padding: 0 1rem;
+  }
+  
+  div.quotesuses ul li:last-child{
+    padding-bottom: 0;
+  }
+  
+  div.quotesuses ul{
+    border-bottom: 1px solid black;
+    margin-bottom: 1rem;
+    display: none;
+  }
+  
+  div.quotesuses ul.show{
+    display: block;
+  }
+
+  div.quotesuses > header span{
+    padding: .1rem;
+    border: 1px solid rgb(90, 90, 90);
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: .4rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+  }
+
+  div.quotesuses > header span:hover{
+    border: 1px solid rgb(48, 67, 175);
+    color: rgb(48, 67, 175);
+  }
+
+  div.top-nav > nav > ul li.active{
+    order: 10;
+    width: 100%;
+  }
+
+  div.top-nav > nav > ul li{
+    width: 50%;
+    flex: 0;
+    flex-basis: auto;
+  }
+
+  div.top-nav > nav > ul{
+    flex-wrap: wrap;
+    box-shadow: 0 0 3px 1px black;
+    margin-bottom: .5rem;
+  }
+}
+
+@media screen and (max-width: 200px) {
+
+  *{
+    font-size: .6rem;
+  }
+
+  section ul.imp-quote-section-ul > li li {
+    margin-left: .4rem;
+  }
+
+  div.date-details span{
+    font-size: .7rem;
+  }
+
+  div.timeline-change-date i{
+    height: 1.2rem;
+  }
+
+  div.timeline{
+    height: 1rem;
+  }
+
+  div.timetables-holder{
+    overflow: auto;
+  }
+
+  div.calen-holder{
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 250px) {
+
+  div.small-nav div.sn-calender.show{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 100px) {
+  section ul.imp-quote-section-ul div.set-form div.form-half{
+    flex-direction: column;
+  }
+}
+
+div.timeline-change-date i{
+  z-index: 6;
+}

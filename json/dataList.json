@@ -1,0 +1,176 @@
+[
+  {
+    "id": 1,
+    "id2": "gendrer",
+    "name": "gender",
+    "list": [
+      "Male",
+      "Female",
+      "Other"
+    ]
+  },
+  {
+    "id": 2,
+    "id2": "moneth",
+    "name": "month",
+    "list": [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
+    ]
+  },
+  {
+    "id": 3,
+    "id2": "dayeth",
+    "name": "day",
+    "list": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      24,
+      27,
+      28,
+      29,
+      30,
+      31
+    ]
+  },
+  {
+    "id": 4,
+    "id2": "wealstaeth",
+    "name": "wealth status",
+    "list": [
+      "Rich",
+      "Average",
+      "Poor"
+    ]
+  },
+  {
+    "id": 5,
+    "id2": "empststeth",
+    "name": "Employment Status",
+    "list": [
+      "Unemployed",
+      "Employed"
+    ]
+  },
+  {
+    "id": 6,
+    "id2": "lookjoeth",
+    "name": "Looking for Job",
+    "list": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "id": 7,
+    "id2": "tmoneth",
+    "name": "Tmonth",
+    "list": [
+      "Every Month",
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
+    ]
+  },
+  {
+    "id": 8,
+    "id2": "tdayeth",
+    "name": "Tdays",
+    "list": [
+      "Every Day",
+      "Weekdays",
+      "Weekends",
+      "Monday",
+      "Tuesday",
+      "Wednessday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ]
+  },
+  {
+    "id": 7,
+    "id2": "tmoneths",
+    "name": "Tmonth",
+    "list": [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
+    ]
+  },
+  {
+    "id": 8,
+    "id2": "tdayeths",
+    "name": "Tdays",
+    "list": [
+      "Monday",
+      "Tuesday",
+      "Wednessday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ]
+  },
+  {
+    "id": 9,
+    "id2": "tasskImport",
+    "name": "Task Importance",
+    "list": [
+      "Important",
+      "Unimportant"
+    ]
+  }
+]

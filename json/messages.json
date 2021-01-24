@@ -1,0 +1,362 @@
+[
+  {
+    "id": 1,
+    "title": "Important Messages and Alerts",
+    "message": "These are the notifiations that either you or the A.I deem important",
+    "status": "notifiation"
+  },
+  {
+    "id": 2,
+    "title": "Alert Info Important Messages and Alerts",
+    "message": "The red alert tells you how many new important messages you have",
+    "status": "notifiation"
+  },
+  {
+    "id": 3,
+    "title": "Your Timeline",
+    "message": "This is where you view your current timeline, tasks, ToDo, and many other important things. It is based on the data you gave the A.I",
+    "status": "notifiation"
+  },
+  {
+    "id": 4,
+    "title": "Alert Info Your Timeline",
+    "message": "The blue alert tells you how many things you're supposed to be working on right now",
+    "status": "notifiation"
+  },
+  {
+    "id": 5,
+    "title": "Listen to Me",
+    "message": "Here, the A.I suggests you ways you can improve yourself, it also offers random advice",
+    "status": "notifiation"
+  },
+  {
+    "id": 6,
+    "title": "Alert Info Listen to Me",
+    "message": "The green alert tells you how many new advice the A.I has for you",
+    "status": "notifiation"
+  },
+  {
+    "id": 7,
+    "title": "Settings",
+    "message": "This is where you can change most of the data you registered with the A.I.",
+    "status": "notifiation"
+  },
+  {
+    "id": 8,
+    "title": "Alert Settings",
+    "message": "The yellow alert tells you how many settings/fields that are yet to be completed by you",
+    "status": "notifiation"
+  },
+  {
+    "id": 9,
+    "title": "Get Started Intro",
+    "message": "Hello There <br>It seems this is the first time you're visiting this humble application. Use the button below to get started<br><button class='small-btt' id='get-started'>Get Started</button><br><small style='font-size: .7rem'>*Note: This site uses local storage to save your data<br>Click the button above to grant permission to access <small>",
+    "status": "XRemove"
+  },
+  {
+    "id": 10,
+    "title": "Get Started Name",
+    "message": "<form class='get-s-form'><div class='qa-box'><label>What's Your Name?</label><input required spellcheck='false' autocomplete='off' type='text' id='start-fullname'><small>Name must be more than 2 characters</small></div><div class='qa-box'><label>What Should I Call You?</label><input required spellcheck='false' autocomplete='off' type='text' id='start-callname'><small>Name can't have more than 2 words</small></div><div class='sa-box'><a>Previous</a><input type='submit' value='Next'></div></form>",
+    "status": "XRemove"
+  },
+  {
+    "id": 11,
+    "title": "Get Started Age",
+    "message": "<form class='get-s-form'><div class='qa-box'><label>How Old Are You?</label><input type='number' required id='start-age'><small>You have to be within the range of 5 to 95 years to continue</small></div><div class='sa-box'><a>Previous</a><input type='submit' value='Next'></div></form>",
+    "status": "XRemove"
+  },
+  {
+    "id": 12,
+    "title": "Get Started Gender",
+    "message": "<form class='get-s-form'><div class='qa-box'><label>What's Your Gender?</label><div><label for=''>Male</label><input type='radio' checked name='gen' id='start-mgender'><label for=''>Female</label><input type='radio' name='gen' id='start-fgender'><label>Others</label><input type='radio' name='gen' id='start-ogender'></div><small>You have to be above 5 years to continue</small></div><div class='sa-box'><a>Previous</a><input type='submit' value='Submit'></div></form>",
+    "status": "XRemove"
+  },
+  {
+    "id": 13,
+    "title": "Get Started Finish",
+    "message": "Congratulations, you've completed the Sign Up. <br> In order to make the A.I more helpful, proceed to the settings page and finish the setup <br> <button class='small-btt' id='get-started-finish'>Finish</button>",
+    "status": "XRemove"
+  },
+  {
+    "id": 14,
+    "title": "Elementary Information",
+    "message": "These are basic information about you, such as name, age and bio",
+    "status": "notifiation"
+  },
+  {
+    "id": 15,
+    "title": "Elementary Information - Name",
+    "message": "This is the name field, make sure the name inserted is correct because it will be used for important queries in the future. It can't be less than 2 letters",
+    "status": "notifiation"
+  },
+  {
+    "id": 16,
+    "title": "Elementary Information - Call",
+    "message": "Input the name that you want to be reffered to by the A.I here. It can't be more than 2 words",
+    "status": "notifiation"
+  },
+  {
+    "id": 17,
+    "title": "Elementary Information - Age",
+    "message": "This is the Age Field. Note that you have to be above 5 and less than 95 to use this application",
+    "status": "notifiation"
+  },
+  {
+    "id": 18,
+    "title": "Elementary Information - Birthday",
+    "message": "This is the Birthday section. Note that your date of birth will be caclculated from the product of this section and your age",
+    "status": "notifiation"
+  },
+  {
+    "id": 19,
+    "title": "Elementary Information - Birthday - Month",
+    "message": "This is the month input, it is recommended to follow the suggestions provided by the field",
+    "status": "notifiation"
+  },
+  {
+    "id": 20,
+    "title": "Elementary Information - Birthday - Day",
+    "message": "This is the Day input, it is recommended to follow the suggestions provided by the field",
+    "status": "notifiation"
+  },
+  {
+    "id": 21,
+    "title": "Elementary Information - Biography",
+    "message": "Write a short but important piece of information about yourself in this field",
+    "status": "notifiation"
+  },
+  {
+    "id": 22,
+    "title": "Personal Preferences",
+    "message": "This includes your personal preferences such as hobbies and sports",
+    "status": "notifiation"
+  },
+  {
+    "id": 23,
+    "title": "Personal Preferences - Hobbies",
+    "message": "Include the things you love doing (hobbies) here, weather its a bad habbit or something extraordinary",
+    "status": "notifiation"
+  },
+  {
+    "id": 24,
+    "title": "Personal Preferences - Hobbies - Name",
+    "message": "The name of the Hobby",
+    "status": "notifiation"
+  },
+  {
+    "id": 25,
+    "title": "Personal Preferences - Hobbies - Description",
+    "message": "The description of the Hobby",
+    "status": "notifiation"
+  },
+  {
+    "id": 26,
+    "title": "Personal Preferences - Sports",
+    "message": "Include the sports you love to watch, play or hear about",
+    "status": "notifiation"
+  },
+  {
+    "id": 27,
+    "title": "Personal Preferences - Hobbies - Name",
+    "message": "The name of the Sport",
+    "status": "notifiation"
+  },
+  {
+    "id": 28,
+    "title": "Personal Preferences - Hobbies - Description",
+    "message": "A short description of the Sport",
+    "status": "notifiation"
+  },
+  {
+    "id": 29,
+    "title": "Monetary Information",
+    "message": "Information about your money is stored here. By filling this part correctly we will inform you when you are over spending and possibly try to help control the situation, of course only with your permission",
+    "status": "notifiation"
+  },
+  {
+    "id": 30,
+    "title": "Monetary Information - Monthly Income",
+    "message": "Insert your average monthly income here. Make sure it is accurate so that we'll be able to know when your spendings are exceeding your income",
+    "status": "notifiation"
+  },
+  {
+    "id": 31,
+    "title": "Monetary Information - Daily Spending",
+    "message": "Your average spending will be calculated from your daily input. But if you wish to ovewrite it, use this field",
+    "status": "notifiation"
+  },
+  {
+    "id": 32,
+    "title": "Monetary Information - Wealth Status",
+    "message": "How do you consider yourself relative to the society around you",
+    "status": "notifiation"
+  },
+  {
+    "id": 33,
+    "title": "Employment Information",
+    "message": "This section contains information about your work or important things (not necessarily bringing income) that you do",
+    "status": "notifiation"
+  },
+  {
+    "id": 34,
+    "title": "Employment Information - Employment Status",
+    "message": "This describes your current employment status. Use 'Mixed' if you have multiple works with different status,",
+    "status": "notifiation"
+  },
+  {
+    "id": 35,
+    "title": "Employment Information - Looking for Job",
+    "message": "If you're currently looking for a Job, fill in 'True' in this field",
+    "status": "notifiation"
+  },
+  {
+    "id": 36,
+    "title": "Employment Information - Works",
+    "message": "This contains the different works that you perform",
+    "status": "notifiation"
+  },
+  {
+    "id": 37,
+    "title": "Employment Information - Works - Type",
+    "message": "The name of the work you perform",
+    "status": "notifiation"
+  },
+  {
+    "id": 38,
+    "title": "Employment Information - Works - Place",
+    "message": "The type of the work you perform",
+    "status": "notifiation"
+  },
+  {
+    "id": 39,
+    "title": "Location Information",
+    "message": "This section contains information on your Current Location and Original (Birth) Loation",
+    "status": "notifiation"
+  },
+  {
+    "id": 40,
+    "title": "Location Information - Origin",
+    "message": "Your Location of Origin, can also be called Birth Location",
+    "status": "notifiation"
+  },
+  {
+    "id": 41,
+    "title": "Location Information - Origin - Country",
+    "message": "The country you originally come from",
+    "status": "notifiation"
+  },
+  {
+    "id": 42,
+    "title": "Location Information - Origin - State",
+    "message": "The state you originally come from",
+    "status": "notifiation"
+  },
+  {
+    "id": 43,
+    "title": "Location Information - Current",
+    "message": "Your Current Location, where you're currently situated",
+    "status": "notifiation"
+  },
+  {
+    "id": 44,
+    "title": "Location Information - Current - Country",
+    "message": "The country where you currently reside",
+    "status": "notifiation"
+  },
+  {
+    "id": 45,
+    "title": "Location Information - Current - State",
+    "message": "The state where you currently reside",
+    "status": "notifiation"
+  },
+  {
+    "id": 46,
+    "title": "Timeline Information",
+    "message": "This section contains information about your day to day activites. This also includes your weekly, monthly or yearly activites",
+    "status": "notifiation"
+  },
+  {
+    "id": 47,
+    "title": "Timeline Information - Name",
+    "message": "The name of the event you wish to register",
+    "status": "notifiation"
+  },
+  {
+    "id": 48,
+    "title": "Timeline Information - Days",
+    "message": "The days you intend on performing the event",
+    "status": "notifiation"
+  },
+  {
+    "id": 49,
+    "title": "Timeline Information - Months",
+    "message": "The months you intend on performing the event",
+    "status": "notifiation"
+  },
+  {
+    "id": 50,
+    "title": "Timeline Information - Time",
+    "message": "The time in the day in whih the event is performed",
+    "status": "notifiation"
+  },
+  {
+    "id": 51,
+    "title": "Timeline Information - Description",
+    "message": "A description of what the event entails",
+    "status": "notifiation"
+  },
+  {
+    "id": 52,
+    "title": "Timeline Information - Description",
+    "message": "Your gender is displayed here",
+    "status": "notifiation"
+  },
+  {
+    "id": 53,
+    "title": "Others",
+    "message": "Other Information",
+    "status": "notifiation"
+  },
+  {
+    "id": 54,
+    "title": "Others - Tasks",
+    "message": "The difference between tasks and timeline is that tasks occur only once and in an instant, which means there is no time frame",
+    "status": "notifiation"
+  },
+  {
+    "id": 55,
+    "title": "Others - Tasks - Name",
+    "message": "The name of the task",
+    "status": "notifiation"
+  },
+  {
+    "id": 56,
+    "title": "Others - Tasks - Day",
+    "message": "The day the task will be performed",
+    "status": "notifiation"
+  },
+  {
+    "id": 57,
+    "title": "Others - Tasks - Month",
+    "message": "The month the task will be performed",
+    "status": "notifiation"
+  },
+  {
+    "id": 58,
+    "title": "Others - Tasks - Time",
+    "message": "The time the task will be performed",
+    "status": "notifiation"
+  },
+  {
+    "id": 59,
+    "title": "Others - Tasks - Description",
+    "message": "The description of the task",
+    "status": "notifiation"
+  },
+  {
+    "id": 60,
+    "title": "Others - Tasks - Importance",
+    "message": "Whether or not the task will be added to the important category",
+    "status": "notifiation"
+  }
+]

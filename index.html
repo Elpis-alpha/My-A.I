@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My A.I</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <script defer src="controllers.js"></script>
+  <script defer src="app.js"></script>
+
+</head>
+
+<body>
+
+  <div class="big_wrapper">
+
+    <div class="top-nav">
+
+      <nav>
+
+        <ul>
+
+          <li id="nav-home">Home</li>
+
+          <li id="nav-ale">Important </li>
+
+          <li id="nav-tod">Timeline</li>
+
+          <li id="nav-say">My Voice</li>
+
+          <li id="nav-set">Settings</li>
+
+        </ul>
+
+      </nav>
+
+    </div>
+
+    <div class="home">
+
+      <h1>
+        <span class="begin-hello">Hello <span id="put-name"></span></span>
+        <span class="left-rollhello"></span>
+        <span class="right-rollhello"></span>
+      </h1>
+
+      <div class="home-contents">
+
+        <ul style="margin-top: -18rem;">
+
+          <li id="home-ale">
+            Important Messages and Alerts
+            <span class="alert-me" style="background-color: red;" id="imp-noti"></span>
+            <div class="elipses">
+              <i class="js-elipses"></i>
+              <div class="elip-info">
+                <ul>
+                  <li id="1" class="alert-me">About</li>
+                  <li id="2" class="alert-me">Alert Info</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li id="home-tod">
+            Your Timeline
+            <span style="background-color: blue;" id="tod-noti"></span>
+            <div class="elipses">
+              <i class="js-elipses"></i>
+              <div class="elip-info">
+                <ul>
+                  <li class="alert-me" id="3">About</li>
+                  <li class="alert-me" id="4">Alert Info</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li id="home-say">
+            Listen to Me
+            <span class="alert-me" style="background-color: green;" id="saylis-noti"></span>
+            <div class="elipses">
+              <i class="js-elipses"></i>
+              <div class="elip-info">
+                <ul>
+                  <li class="alert-me" id="5">About</li>
+                  <li class="alert-me" id="6">Alert Info</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li id="home-set">
+            Settings
+            <span class="alert-me" style="background-color: orange;" id="sett-noti"></span>
+            <div class="elipses">
+              <i class="js-elipses"></i>
+              <div class="elip-info">
+                <ul>
+                  <li class="alert-me" id="7">About</li>
+                  <li class="alert-me" id="8">Alert Info</li>
+                  <li class="alert-me" id="10">Test</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="alert-advice">
+
+      <section>
+
+        <ul class="imp-quote-section-ul">
+
+          <img src="images/loading.gif" alt="Loading...">
+
+        </ul>
+
+      </section>
+
+
+    </div>
+
+    <div class="to-do-timeline">
+
+      <div>
+
+        <div class="timeline-calender-stuffs">
+
+          <div class="timeline-container">
+
+            <div class="timeline-reset">
+              <button id="reset-timeline">Reset</button>
+            </div>
+
+            <div class="hover-timeline"><span>12:00am</span></div>
+
+            <div class="timeline">
+
+              <div class="hidden-timeline"></div>
+
+              <div class="covered-timeline"></div>
+
+            </div>
+
+          </div>
+
+          <div class="timeline-change-date">
+
+            <div class="prevday-timeline">
+              <i class="js-arrow-left"></i>
+            </div>
+
+            <div class="calender">
+              <i class="js-calender" id="calender-icon"></i>
+            </div>
+
+            <div class="calen-holder">
+
+              <div class="calen">
+
+                <div class="the-calender-info">
+
+                  <div class="calen-monyea-inp">
+
+                    <span class="calen-month-input">
+                      <input type="text" onfocus="this.value = ''">
+                    </span>
+
+                    <span class="calen-year-input">
+                      <input type="number">
+                    </span>
+
+                  </div>
+
+                  <span class="calen-month"></span>
+
+                  <span class="calen-year"></span>
+
+                </div>
+
+                <div class="the-calender">
+
+                  <table>
+
+                    <tbody>
+
+
+                    </tbody>
+
+                  </table>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="nextday-timeline">
+              <i class="js-arrow-right"></i>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="date-details">
+
+          <div class="detail-day-date">
+
+            <span id="detail-date"></span>,
+
+            <span id="detail-day"></span>
+
+          </div>
+
+          <div class="detail-month-year">
+
+            <span id="detail-month"></span>,
+
+            <span id="detail-year"></span>
+
+          </div>
+
+          <div class="detail-time">
+
+            <span id="detail-zone"></span>
+
+            <span id="detail-time"></span>
+
+          </div>
+
+        </div>
+
+        <div class="tasktime-tabs">
+          <div class="tasktime-small-tab" id="tasktime-0">Timeline</div>
+          <div class="tasktime-small-tab" id="tasktime-1">Task</div>
+        </div>
+
+        <div class="timetables-holder">
+
+          <div id="titab-0" class="timelist-table">
+
+            <table class="organised-table">
+
+              <thead>
+
+                <tr>
+                  <th>S/N</th>
+                  <th>Name</th>
+                  <th>Date</th>
+                  <th>Start</th>
+                  <th>End</th>
+                  <th>Others</th>
+                </tr>
+
+              </thead>
+
+              <tbody id="timeline-table">
+              </tbody>
+
+            </table>
+
+          </div>
+
+          <div id="titab-1" class="timelist-table">
+
+            <table class="organised-table">
+
+              <thead>
+
+                <tr>
+                  <th>S/N</th>
+                  <th>Name</th>
+                  <th>Date</th>
+                  <th>Time</th>
+                  <th>Others</th>
+                </tr>
+
+              </thead>
+
+              <tbody id="task-table"></tbody>
+
+            </table>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="say-something">
+
+      <section>
+
+        <ul class="quote-section-ul">
+
+          <img src="images/loading.gif" alt="Loading...">
+
+        </ul>
+
+      </section>
+
+      <aside>
+
+        <div class="quotesuses">
+
+          <header>Quotes <span onclick="GlobalCtrl.toggleItemClass('.insert-quotes', 'show')">+</span></header>
+
+          <ul class="insert-quotes"></ul>
+
+        </div>
+
+      </aside>
+
+    </div>
+
+    <div class="settings-p">
+
+      <section class="elementary-info">
+
+        <h2>Elementary Information
+          <i id="14" class="js-question alert-me"></i>
+        </h2>
+
+        <div class="set-form" id="fname">
+
+          <label for="">Name
+            <i id="15" class="js-question alert-me normset-imp"></i>
+          </label>
+
+          <input type="text">
+
+        </div>
+
+        <div class="set-form" id="cname">
+
+          <label for="">What I Call You
+            <i id="16" class="js-question alert-me normset-imp"></i>
+          </label>
+
+          <input type="text">
+
+        </div>
+
+        <div class="set-form" id="age">
+
+          <label for="">Age
+            <i id="17" class="js-question alert-me normset-imp"></i>
+          </label>
+
+          <input type="number">
+
+        </div>
+
+        <div class="set-form" id="gender">
+
+          <label for="">Gender
+            <i id="52" class="js-question alert-me normset-imp"></i>
+          </label>
+
+          <input type="text" list="gendrer">
+
+        </div>
+
+        <div class="set-form" id="b-day">
+
+          <label for="">Birthday
+            <i id="18" class="js-question alert-me normset-imp"></i>
+          </label>
+
+          <div class="form-half">
+
+            <div class="bmonth set-form">
+              <label for="">Month
+                <i id="19" class="js-question alert-me normset-imp"></i>
+              </label>
+              <input type="text" list="moneth">
+            </div>
+
+            <div class="bday set-form">
+              <label for="">Day
+                <i id="20" class="js-question alert-me normset-imp"></i>
+              </label>
+              <input list="bir-day" list="dayeth" max="31" min="1" type="number">
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="set-form" id="bio-g">
+
+          <label for="">Biography <i id="21" class="js-question alert-me normset-imp"></i></label>
+
+          <textarea name="" cols="50" rows="3"></textarea>
+
+        </div>
+
+      </section>
+
+      <section class="personal-pref">
+
+        <h2>Personal Prefrences <i id="22" class="js-question alert-me"></i> </h2>
+
+        <div class="set-form" id="hobi">
+
+          <div class="inner-add">
+
+            <p>Hobbies <i id="23" class="js-question alert-me normset-imp"></i></p>
+
+            <span class="show-bform">Add</span>
+
+            <form>
+
+              <div class="set-form" id="hobbi">
+
+                <label for="">
+                  Name
+                  <i id="24" class="js-question alert-me normset-imp"></i>
+                </label>
+
+                <input type="text" list="hoberth">
+
+              </div>
+
+              <div class="set-form" id="hobbi-description">
+
+                <label for="">
+                  Description
+                  <i id="25" class="js-question alert-me normset-imp"></i>
+                </label>
+
+                <textarea name="" placeholder="Optional" cols="30" rows="3"></textarea>
+
+              </div>
+
+              <div class="set-form" id="hobbi-save">
+                <input type="submit" value="Save">
+              </div>
+
+            </form>
+
+            <div class="my-hobbies">
+
+              <ul class="horb">
+
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="set-form" id="sport">
+
+          <div class="inner-add">
+
+            <p>Sports <i id="26" class="js-question alert-me normset-imp"></i></p>
+
+            <span class="show-bform">Add</span>
+
+            <form>
+
+              <div class="set-form" id="spor">
+
+                <label for="">
+                  Name
+                  <i id="27" class="js-question alert-me normset-imp"></i>
+                </label>
+
+                <input type="text" list="spoerth">
+
+              </div>
+
+              <div class="set-form" id="spor-description">
+
+                <label for="">
+                  Description
+                  <i id="28" class="js-question alert-me normset-imp"></i>
+                </label>
+
+                <textarea name="" cols="30" rows="3"></textarea>
+
+              </div>
+
+              <div class="set-form" id="spor-save">
+                <input type="submit" value="Save">
+              </div>
+
+            </form>
+
+            <div class="my-sports">
+
+              <ul class="smorp">
+
+                <li>
+
+                  <p><span>Hockey</span></p>
+
+                </li>
+
+                <li>
+
+                  <p><span>Baseball</span></p>
+
+                </li>
+
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="monetary-info">
+
+        <h2>Monetary Information <i id="29" class="js-question alert-me"></i> </h2>
+
+        <div class="set-form" id="mon-income">
+
+          <label for="">Monthly Income <i id="30" class="js-question alert-me normset-imp"></i></label>
+
+          <span class="doll">$</span>
+          <input type="number">
+
+        </div>
+
+        <div class="set-form" id="daily-spen">
+
+          <label for="">Daily Spendings <i id="31" class="js-question alert-me normset-imp"></i></label>
+
+          <span class="doll">$</span>
+          <input type="number">
+
+        </div>
+
+        <div class="set-form" id="wealth-status">
+
+          <label for="">Wealth Status <i id="32" class="js-question alert-me normset-imp"></i></label>
+
+          <input type="text" list="wealstaeth">
+
+        </div>
+
+      </section>
+
+      <section class="employment-info">
+
+        <h2>Employment Information <i id="33" class="js-question alert-me"></i> </h2>
+
+        <div class="set-form" id="employ-stat">
+
+          <label for="">Employment Status <i id="34" class="js-question alert-me normset-imp"></i></label>
+
+          <input type="text" list="empststeth">
+
+        </div>
+
+        <div class="set-form" id="look-job">
+
+          <label for="">Looking for Job <i id="35" class="js-question alert-me normset-imp"></i></label>
+
+          <input type="text" list="lookjoeth">
+
+        </div>
+
+        <div class="set-form" id="works">
+
+          <div class="inner-add">
+
+            <p>Works <i id="36" class="js-question alert-me normset-imp"></i></p>
+
+            <span class="show-bform">Add</span>
+
+            <form>
+
+              <div class="set-form" id="wor-type">
+
+                <label for="">Type <i id="37" class="js-question alert-me normset-imp"></i></label>
+
+                <input type="text" list="occuerth">
+
+              </div>
+
+              <div class="set-form" id="wor-place">
+
+                <label for="">Place <i id="38" class="js-question alert-me normset-imp"></i></label>
+
+                <input type="text">
+
+              </div>
+
+              <div class="set-form" id="wor-save">
+                <input type="submit" value="Save">
+              </div>
+
+            </form>
+
+            <div class="my-works">
+
+              <ul class="work">
+
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="location-info">
+
+        <h2>Location Information <i id="39" class="js-question alert-me"></i> </h2>
+
+        <div class="set-form" id="loc-ori">
+
+          <label for="">Origin <i id="40" class="js-question alert-me normset-imp"></i></label>
+
+          <div class="form-half">
+
+            <div class="set-form" id="loc-ori-coun">
+              <label for="">Country <i id="41" class="js-question alert-me normset-imp"></i></label>
+              <input type="text" list="counerth">
+            </div>
+
+            <div class="set-form" id="loc-ori-sta">
+              <label for="">State <i id="42" class="js-question alert-me normset-imp"></i></label>
+              <input type="text">
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="set-form" id="loc-curr">
+
+          <label for="">Current <i id="43" class="js-question alert-me normset-imp"></i></label>
+
+          <div class="form-half">
+
+            <div class="set-form" id="loc-curr-coun">
+              <label for="">Country <i id="44" class="js-question alert-me normset-imp"></i></label>
+              <input type="text" list="counerth">
+            </div>
+
+            <div class="set-form" id="loc-curr-sta">
+              <label for="">State <i id="45" class="js-question alert-me normset-imp"></i></label>
+              <input type="text">
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="others-info">
+
+        <h2>Others<i id="53" class="js-question alert-me"></i> </h2>
+
+        <div class="set-form" id="timelines">
+
+          <div class="inner-add">
+
+            <p>
+              Timeline
+              <i id="46" class="js-question alert-me normset-imp"></i>
+            </p>
+
+            <span class="show-bform">Add</span>
+
+            <form>
+
+              <div class="set-form" id="timl-name">
+
+                <label for="">
+                  Name
+                  <i id="47" class="js-question alert-me normset-imp"></i>
+                </label>
+
+                <input required type="text">
+
+              </div>
+
+              <div class="set-form" id="timl-days">
+
+                <label for="">
+                  Days or Date
+                  <i id="48" class="js-question alert-me normset-imp"></i>
+                </label>
+
+                <input required list="tdayeth" placeholder="Monday, Tuesday, Saturday" type="text">
+
+              </div>
+
+              <div class="set-form" id="timl-months">
+
+                <label for="">
+                  Months
+                  <i id="49" class="js-question alert-me normset-imp"></i>
+                </label>
+
+                <input required list="tmoneth" placeholder="January, March, December" type="text">
+
+              </div>
+
+              <div class="set-form" id="timl-time">
+
+                <label for="">
+                  Time
+                  <i id="50" class="js-question alert-me normset-imp"></i>
+                </label>
+
+                <input required placeholder="1:00am - 2:00am" type="text">
+
+              </div>
+
+              <div class="set-form" id="timl-description">
+
+                <label for="">
+                  Description
+                  <i id="51" class="js-question alert-me normset-imp"></i>
+                </label>
+
+                <textarea name="" cols="30" rows="2"></textarea>
+
+              </div>
+
+              <div class="set-form" id="timl-save">
+                <input type="submit" value="Save">
+              </div>
+
+            </form>
+
+            <div class="my-events">
+
+              <ul class="envnt">
+
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="set-form" id="tasks">
+
+          <div class="inner-add">
+
+            <p>
+              Tasks
+              <i id="54" class="js-question alert-me normset-imp"></i>
+            </p>
+
+            <span class="show-bform">Add</span>
+
+            <form>
+
+              <div class="set-form" id="task-name">
+
+                <label for="">
+                  Name
+                  <i id="55" class="js-question alert-me normset-imp"></i>
+                </label>
+
+                <input required type="text">
+
+              </div>
+
+              <div class="set-form" id="task-date">
+
+                <label for="">
+                  Date
+                  <i id="56" class="js-question alert-me normset-imp"></i>
+                </label>
+
+                <input required placeholder="15 - April - 2021" type="text">
+
+              </div>
+
+              <div class="set-form" id="task-time">
+
+                <label for="">
+                  Time
+                  <i id="58" class="js-question alert-me normset-imp"></i>
+                </label>
+
+                <input required placeholder="1:00am" type="text">
+
+              </div>
+
+              <div class="set-form" id="task-impor">
+
+                <label for="">
+                  Status
+                  <i id="60" class="js-question alert-me normset-imp"></i>
+                </label>
+
+                <input required list="tasskImport" placeholder="Important or Unimportant" type="text">
+
+              </div>
+
+              <div class="set-form" id="task-description">
+
+                <label for="">
+                  Description
+                  <i id="59" class="js-question alert-me normset-imp"></i>
+                </label>
+
+                <textarea name="" cols="30" rows="2"></textarea>
+
+              </div>
+
+              <div class="set-form" id="task-save">
+                <input type="submit" value="Save">
+              </div>
+
+            </form>
+
+            <div class="my-tasks">
+
+              <ul class="tmnks">
+
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <div id="my-datalists"></div>
+
+    </div>
+
+    <div class="message-holder">
+      <span id="mess-cancel">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512">
+          <path
+            d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" />
+        </svg>
+      </span>
+      <div class="message-blur"></div>
+      <div class="message"></div>
+    </div>
+
+    <div class="small-nav">
+
+      <div>
+
+        <div class="small-nav-time"></div>
+
+        <div class="small-nav-calender">
+          <i class="js-calender"></i>
+        </div>
+
+        <div class="small-nav-contact">
+          <i class="js-dark-message"></i>
+        </div>
+
+      </div>
+
+      <div class="sn-calender">
+
+        <div class="sn-calen">
+
+          <div class="sn-the-calender-info">
+
+            <span class="sn-calen-month"></span>
+
+            <span class="sn-calen-year"></span>
+
+          </div>
+
+          <div class="sn-the-calender">
+
+            <table>
+
+              <tbody></tbody>
+
+            </table>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="sn-mail-box">
+
+        <div class="sn-mail-header">
+          Contact the Developer
+        </div>
+
+        <div class="sn-mail-form">
+          <form>
+
+            <div class="form-box">
+              <label for="">Name</label>
+              <input required type="text" placeholder="Name or Subject">
+            </div>
+
+            <div class="form-box">
+              <label for="">Email</label>
+              <input required type="email" placeholder="example@gmail.om">
+            </div>
+
+            <div class="form-box">
+              <label for="">Message</label>
+              <textarea required name=""></textarea>
+            </div>
+
+            <input type="submit" value="Send">
+
+          </form>
+        </div>
+
+        <div class="sn-mail-others">
+          <a href="tel:+2347041679479" target="_blank">
+            <i class="js-phone"></i>
+          </a>
+          <a href="http://wa.me/234741679479?text=Hello" target="_blank">
+            <i class="js-whatsapp"></i>
+          </a>
+          <a href="http://www.linkedin.om/in/gbolade-festus-olugboyega-8431631b9" target="_blank">
+            <i class="js-linkedin"></i>
+          </a>
+          <a href="mailto:elpis409@gmail.com?cc=wede@gmail.com&body=Hello" target="_blank">
+            <i class="js-dark-message"></i>
+          </a>
+          <a href="http://twitter.com/Elpis94950995" target="_blank">
+            <i class="js-twitter"></i>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="small-message-holder">
+      <span id="small-mess-cancel">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512">
+          <path
+            d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" />
+        </svg>
+      </span>
+      <div class="small-message-blur"></div>
+      <div class="small-message"></div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
