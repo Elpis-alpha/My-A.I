@@ -1276,43 +1276,53 @@ const App = (function (UICtrl, APICtrl, StorageCtrl) {
 
       if (todayBegin > lastChecked) {
 
-        UICtrl.sendXMessage(`
-        <form class="get-s-form" id="spentForm-3x3">
+        setTimeout(() => {
 
-          <div class="qa-box" style="margin-bottom: 0;">
+          UICtrl.sendXMessage(`
+            <form class="get-s-form" id="spentForm-3x3">
+    
+              <div class="qa-box" style="margin-bottom: 0;">
+              
+                <label>How Much did you spend yesterday?</label>
+    
+                <input type="number" id="spent-3x3">
+                
+              </div>
+    
+              <button class="small-btt" id="get-started">Save</button>
+            </form>
+          `)
+
+          const theForm = UICtrl.findElement('#spentForm-3x3')
+
+          const theMoney = UICtrl.findElement('#spent-3x3')
+
+          theMoney.value = UserCtrl.getData('daily spendings')
+
+          theForm.addEventListener('submit', (e) => {
           
-            <label>How Much did you spend yesterday?</label>
+            const dailySpend = typeof UserCtrl.getData('daily spendings') === "number" ? UserCtrl.getData('daily spendings') : parseInt(theMoney.value)
 
-            <input type="number" id="spent-3x3">
-            
-          </div>
+            e.preventDefault()
 
-          <button class="small-btt" id="get-started">Save</button>
-        </form>
-        `)
+            if (!isNaN(theMoney.value)) {
 
-        const theForm = UICtrl.findElement('#spentForm-3x3')
+              console.log(theMoney.value);
 
-        const theMoney = UICtrl.findElement('#spent-3x3')
+              let ser = Math.floor((parseInt(dailySpend) + parseInt(theMoney.value)) / 2)
 
-        theMoney.value = UserCtrl.getData('daily spendings')
+              UserCtrl.setData('daily spendings', ser)
 
-        theForm.addEventListener('submit', (e) => {
-          e.preventDefault()
+              UserCtrl.setData('lastTimeIncome', todayBegin + 1000)
 
-          if (!isNaN(theMoney.value)) {
+              UICtrl.removeXMessage()
 
-            let ser = Math.floor((parseInt(UserCtrl.getData('daily spendings')) + parseInt(theMoney.value)) / 2)
+            } else {
+              UItrl.sendSmallMessage('Daily Spendings not saved due to incomplete validation')
+            }
+          })
 
-            UserCtrl.setData('daily spendings', ser)
-
-            UserCtrl.setData('lastTimeIncome', todayBegin + 1000)
-
-            UICtrl.removeXMessage()
-          } else {
-            UItrl.sendSmallMessage('Daily Spendings not saved due to incomplete validation')
-          }
-        })
+        }, 6000);
       }
 
     }
@@ -2362,7 +2372,7 @@ const App = (function (UICtrl, APICtrl, StorageCtrl) {
         }
 
         if (craftedTimelines.length === 0) {
-          timelineString = `Create a new task to view it here`
+          timelineString = `<span class="empt-arry">Create a new timeline event to view it here</span>`
         }
 
         UICtrl.UIVars().timelineTable.innerHTML = timelineString
@@ -2410,7 +2420,7 @@ const App = (function (UICtrl, APICtrl, StorageCtrl) {
         }
 
         if (allTasks.length === 0 || allTasks === '') {
-          tasksString = `Create a new task to view it here`
+          tasksString = `<span class="empt-arry">Create a new task to view it here</span>`
         }
 
         UICtrl.UIVars().taskTable.innerHTML = tasksString

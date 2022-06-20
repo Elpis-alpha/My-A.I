@@ -3,7 +3,7 @@
   font-family: mainFont;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -11,68 +11,68 @@
   font-size: .9rem;
 }
 
-body{
+body {
   font-family: mainFont;
   background-color: rgb(207, 207, 207);
 }
 
-svg{
+svg {
   height: inherit;
   width: inherit;
 }
 
-i{
+i {
   height: 1rem;
   cursor: pointer;
   display: inline-block;
   z-index: 1;
 }
 
-i svg{
+i svg {
   z-index: -5;
 }
 
-div.home{
+div.home {
   display: none;
 }
 
-div.alert-advice{
+div.alert-advice {
   display: none;
 }
 
-div.to-do-timeline{
+div.to-do-timeline {
   display: none;
 }
 
-div.say-something{
+div.say-something {
   display: none;
 }
 
-div.settings-p{
+div.settings-p {
   display: none;
 }
 
-div.home.show{
+div.home.show {
   display: flex;
 }
 
-div.alert-advice.show{
+div.alert-advice.show {
   display: block;
 }
 
-div.to-do-timeline.show{
+div.to-do-timeline.show {
   display: block;
 }
 
-div.say-something.show{
+div.say-something.show {
   display: block;
 }
 
-div.settings-p.show{
+div.settings-p.show {
   display: block;
 }
 
-div.home{
+div.home {
   flex-direction: column;
   min-height: 100vh;
   align-items: center;
@@ -81,11 +81,12 @@ div.home{
   overflow: hidden;
 }
 
-div.home.show-3{
+div.home.show-3 {
   overflow: visible;
 }
 
-div.home  div.home-contents, div.home  div.home-contents > ul{
+div.home div.home-contents,
+div.home div.home-contents>ul {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -93,7 +94,7 @@ div.home  div.home-contents, div.home  div.home-contents > ul{
   text-align: center;
 }
 
-div.home h1{
+div.home h1 {
   margin: 0 auto;
   margin-bottom: .5rem;
   font-size: 2rem;
@@ -102,18 +103,18 @@ div.home h1{
   text-align: center;
 }
 
-div.home h1 span.begin-hello{
+div.home h1 span.begin-hello {
   display: block;
   padding-bottom: .5rem;
   font-size: 2rem;
 }
 
-div.home h1 span.begin-hello span{
+div.home h1 span.begin-hello span {
   padding-bottom: .5rem;
   font-size: 1.9rem;
 }
 
-div.home  div.home-contents > ul > li{
+div.home div.home-contents>ul>li {
   padding: .5rem;
   margin: .5rem;
   border: 1px solid transparent;
@@ -128,37 +129,39 @@ div.home  div.home-contents > ul > li{
   transition: margin 1s, transform 1s, box-shadow 1s, border 1s;
 }
 
-div.home  div.home-contents > ul > li span{
+div.home div.home-contents>ul>li span {
   display: inline-flex;
   background-color: red;
-  width: 1rem; height: 1rem;
+  width: 1rem;
+  height: 1rem;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
   color: white;
 }
 
-div.home  div.home-contents > ul > li span#blue{
+div.home div.home-contents>ul>li span#blue {
   background-color: blue;
 }
 
-div.home  div.home-contents > ul > li span#green{
+div.home div.home-contents>ul>li span#green {
   background-color: green;
 }
 
-div.home  div.home-contents > ul > li span#orange{
+div.home div.home-contents>ul>li span#orange {
   background-color: orange;
 }
 
-div.home.show-2  div.home-contents > ul > li:hover{
+div.home.show-2 div.home-contents>ul>li:hover {
   border: 1px solid transparent;
   box-shadow: 0 0 4px 1px black;
 }
 
-div.elipses{
+div.elipses {
   display: inline-flex;
   position: absolute;
-  right: 0; top: 0;
+  right: 0;
+  top: 0;
   height: 100%;
   width: 1.5rem;
   align-items: center;
@@ -167,7 +170,7 @@ div.elipses{
   border-top-right-radius: 1rem;
 }
 
-div.elipses i{
+div.elipses i {
   opacity: .5;
   width: 50%;
   height: 100%;
@@ -175,44 +178,47 @@ div.elipses i{
   z-index: -1;
 }
 
-div.elipses:hover{
+div.elipses:hover {
   background: linear-gradient(to right, transparent, grey);
 }
 
-div.elipses:hover i{
+div.elipses:hover i {
   opacity: 1;
 }
 
-div.elipses div.elip-info{
+div.elipses div.elip-info {
   position: absolute;
   display: none;
   background-color: rgb(235, 235, 235);
   box-shadow: 1px 0 4px 1px;
   opacity: 1;
   z-index: 10;
-  top: 0; right: 0;
+  top: 0;
+  right: 0;
   flex-direction: column;
 }
 
-div.elipses div.elip-info li{
+div.elipses div.elip-info li {
   list-style-type: none;
   padding: .5rem 1rem;
   white-space: pre;
   font-size: .7rem;
 }
 
-div.elipses div.elip-info li:hover{
+div.elipses div.elip-info li:hover {
   background-color: rgb(194, 194, 194);
 }
 
-div.elipses div.elip-info.show{
+div.elipses div.elip-info.show {
   display: flex;
 }
 
-div.message-holder{
+div.message-holder {
   position: absolute;
-  top: 0; bottom: 0;
-  left: 0; right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   display: none;
   /* width: 100vw; */
   height: 100vh;
@@ -222,10 +228,12 @@ div.message-holder{
   padding: 1rem 2rem;
 }
 
-div.message-holder div.message-blur{
+div.message-holder div.message-blur {
   position: absolute;
-  top: 0; bottom: 0;
-  left: 0; right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   display: flex;
   /* width: 100vw; */
   height: 100vh;
@@ -233,7 +241,7 @@ div.message-holder div.message-blur{
   background-color: rgba(61, 61, 61, 0.548);
 }
 
-div.message-holder div.message{
+div.message-holder div.message {
   z-index: 105;
   background-color: rgba(207, 207, 207, 1);
   padding: 1rem;
@@ -243,7 +251,7 @@ div.message-holder div.message{
   box-shadow: 0 0 15px 2px black;
 }
 
-span#mess-cancel{
+span#mess-cancel {
   position: absolute;
   display: none;
   width: 2.6rem;
@@ -255,35 +263,35 @@ span#mess-cancel{
   fill: red;
 }
 
-span#mess-cancel svg{
+span#mess-cancel svg {
   z-index: -1;
 }
 
-span#mess-cancel:hover{
+span#mess-cancel:hover {
   fill: blue;
 }
 
-div.message-holder.show{
+div.message-holder.show {
   display: flex;
   position: fixed;
 }
 
-div.message-holder.x-show{
+div.message-holder.x-show {
   display: flex;
   position: fixed;
 }
 
-div.message-holder.x-show.bubble div.message{
+div.message-holder.x-show.bubble div.message {
   transform: scale(1.01);
 }
 
-div.message-holder.x-show span#mess-cancel{
+div.message-holder.x-show span#mess-cancel {
   display: none;
 }
 
-div.small-message-holder{
+div.small-message-holder {
   position: fixed;
-  top: 0; 
+  top: 0;
   /* bottom: 0; */
   /* left: 0;  */
   right: 0;
@@ -296,31 +304,48 @@ div.small-message-holder{
   /* padding: 1rem 1rem; */
 }
 
-div.small-message-holder div.small-message-blur{
+div.small-message-holder div.small-message-blur {
   position: absolute;
-  top: 0; bottom: 0;
-  left: 0; right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   display: none;
   height: 100vh;
   z-index: 121;
 }
 
 @keyframes sm-messg-top {
-  0%{top: -3rem}
-  100%{top: 1rem}
+  0% {
+    top: -3rem
+  }
+
+  100% {
+    top: 1rem
+  }
 }
 
 @keyframes sm-messg-topS {
-  0%{top: -3rem}
-  100%{top: 1.5rem}
+  0% {
+    top: -3rem
+  }
+
+  100% {
+    top: 1.5rem
+  }
 }
 
 @keyframes sm-messg-topX {
-  0%{top: -3rem}
-  100%{top: 1rem}
+  0% {
+    top: -3rem
+  }
+
+  100% {
+    top: 1rem
+  }
 }
 
-div.small-message-holder.show div.small-message{
+div.small-message-holder.show div.small-message {
   z-index: 125;
   background-color: rgba(207, 207, 207, 1);
   padding: 1.5rem 1rem;
@@ -340,7 +365,7 @@ div.small-message-holder.show div.small-message{
   animation: sm-messg-top .3s 1;
 }
 
-span#small-mess-cancel{
+span#small-mess-cancel {
   position: absolute;
   width: .7rem;
   top: 1.5rem;
@@ -352,26 +377,26 @@ span#small-mess-cancel{
   /* display: none; */
 }
 
-span#small-mess-cancel svg{
+span#small-mess-cancel svg {
   z-index: -1;
 }
 
-span#small-mess-cancel:hover{
+span#small-mess-cancel:hover {
   fill: blue;
 }
 
-div.small-message-holder.show{
+div.small-message-holder.show {
   display: flex;
 }
 
-form.get-s-form{
+form.get-s-form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-form.get-s-form div.qa-box{
+form.get-s-form div.qa-box {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -381,7 +406,7 @@ form.get-s-form div.qa-box{
   margin-bottom: 1.5rem;
 }
 
-form.get-s-form div.qa-box input{
+form.get-s-form div.qa-box input {
   margin-top: .2rem;
   width: 80%;
   padding: .1rem;
@@ -396,34 +421,35 @@ form.get-s-form div.qa-box input{
   transition: border 1s;
 }
 
-form.get-s-form div.qa-box input:focus{
+form.get-s-form div.qa-box input:focus {
   border-color: rgb(1, 156, 1);
 }
 
-form.get-s-form div.qa-box small{
+form.get-s-form div.qa-box small {
   position: absolute;
   top: 100%;
   font-size: .5rem;
-  left: 0;right: 0;
+  left: 0;
+  right: 0;
   opacity: 0;
   color: green;
   transition: opacity 1s, color .5s;
 }
 
-form.get-s-form div.qa-box input:focus + small{
+form.get-s-form div.qa-box input:focus+small {
   opacity: 1;
 }
 
-form.get-s-form div.qa-box.bad input{
+form.get-s-form div.qa-box.bad input {
   border-bottom: 3px solid red;
 }
 
-form.get-s-form div.qa-box.bad small{
+form.get-s-form div.qa-box.bad small {
   color: red;
   opacity: 1;
 }
 
-form.get-s-form div.sa-box{
+form.get-s-form div.sa-box {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -432,7 +458,7 @@ form.get-s-form div.sa-box{
   flex-wrap: wrap;
 }
 
-form.get-s-form div.sa-box a{
+form.get-s-form div.sa-box a {
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
   background-color: grey;
@@ -448,7 +474,7 @@ form.get-s-form div.sa-box a{
   transition: box-shadow 1s;
 }
 
-form.get-s-form div.sa-box input{
+form.get-s-form div.sa-box input {
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
   border: 0;
@@ -468,11 +494,11 @@ form.get-s-form div.sa-box input{
 }
 
 form.get-s-form div.sa-box a:hover,
-form.get-s-form div.sa-box input:hover{
+form.get-s-form div.sa-box input:hover {
   box-shadow: 0 0 5px 1px;
 }
 
-button.small-btt{
+button.small-btt {
   border: 0;
   background-color: rgb(48, 91, 223);
   height: 2rem;
@@ -486,43 +512,43 @@ button.small-btt{
   color: white;
 }
 
-button.small-btt:hover{
+button.small-btt:hover {
   box-shadow: 0 0 5px 1px black;
 }
 
-form.get-s-form div.qa-box div{
+form.get-s-form div.qa-box div {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   padding-top: .5rem;
 }
 
-form.get-s-form div.qa-box div input{
+form.get-s-form div.qa-box div input {
   flex: 1;
   width: auto;
   margin-right: 1rem;
   margin-left: .4rem;
 }
 
-div.top-nav{
+div.top-nav {
   z-index: 80;
   display: none;
 }
 
-div.top-nav.show{
+div.top-nav.show {
   display: block;
 }
 
-div.top-nav > nav{
+div.top-nav>nav {
   display: flex;
 }
 
-div.top-nav > nav > ul{
+div.top-nav>nav>ul {
   display: flex;
   flex: 1;
 }
 
-div.top-nav > nav > ul li{
+div.top-nav>nav>ul li {
   list-style-type: none;
   flex: 1;
   text-align: center;
@@ -532,63 +558,63 @@ div.top-nav > nav > ul li{
   border-bottom: 2px solid transparent;
 }
 
-div.top-nav > nav > ul li.active{
+div.top-nav>nav>ul li.active {
   /* border: 2px solid black; */
   border-bottom: 1px solid black;
   /* border-top-left-radius: 1rem; */
   /* border-top-right-radius: 1rem; */
 }
 
-div.top-nav > nav > ul li:last-child{
+div.top-nav>nav>ul li:last-child {
   border-top-right-radius: 0rem;
   border-right: 0;
 }
 
-div.top-nav > nav > ul li:first-child{
+div.top-nav>nav>ul li:first-child {
   border-top-left-radius: 0rem;
   border-left: 0;
 }
 
 
 /* Settings Page */
-div.settings-p.show{
+div.settings-p.show {
   display: flex;
   padding: .25rem;
   flex-direction: column;
 }
 
-div.settings-p > section{
+div.settings-p>section {
   border-bottom: 1px solid black;
   padding: 1rem 0;
 }
 
-div.settings-p > section:last-of-type{
+div.settings-p>section:last-of-type {
   border-bottom: 0 none;
 }
 
-div.settings-p > section:first-child{
+div.settings-p>section:first-child {
   padding-top: 0;
 }
 
-div.settings-p > section > h2{
+div.settings-p>section>h2 {
   font-size: 1.2rem;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
-div.settings-p > section > h2 i{
+div.settings-p>section>h2 i {
   padding-left: .2rem;
 }
 
-div.settings-p > section > div.set-form{
+div.settings-p>section>div.set-form {
   padding: .5rem .3rem;
   display: flex;
   flex-direction: column;
 }
 
-div.settings-p > section > div.set-form input,
-div.settings-p > section > div.set-form textarea{
+div.settings-p>section>div.set-form input,
+div.settings-p>section>div.set-form textarea {
   padding: .5rem;
   border-radius: .5rem;
   margin-top: .2rem;
@@ -600,67 +626,67 @@ div.settings-p > section > div.set-form textarea{
   transition: background-color 1s;
 }
 
-div.settings-p > section > div.set-form input[type=submit]:hover{
+div.settings-p>section>div.set-form input[type=submit]:hover {
   cursor: pointer;
   background-color: green;
 }
 
-div.settings-p > section div.set-form.warn input,
-div.settings-p > section div.set-form.warn textarea{
+div.settings-p>section div.set-form.warn input,
+div.settings-p>section div.set-form.warn textarea {
   background-color: rgba(238, 255, 0, 0.459);
 }
 
-div.settings-p > section div.set-form.bad input,
-div.settings-p > section div.set-form.bad textarea{
+div.settings-p>section div.set-form.bad input,
+div.settings-p>section div.set-form.bad textarea {
   background-color: rgba(255, 0, 0, 0.459);
 }
 
-div.settings-p > section div.set-form input:focus,
-div.settings-p > section div.set-form textarea:focus{
+div.settings-p>section div.set-form input:focus,
+div.settings-p>section div.set-form textarea:focus {
   background-color: rgba(0, 128, 0, 0.548);
 }
 
-div.settings-p > section div.set-form.bad input:focus,
-div.settings-p > section div.set-form.bad textarea:focus{
+div.settings-p>section div.set-form.bad input:focus,
+div.settings-p>section div.set-form.bad textarea:focus {
   background-color: rgba(255, 0, 0, 0.459);
 }
 
-div.settings-p > section div.set-form.warn input:focus,
-div.settings-p > section div.set-form.warn textarea:focus{
+div.settings-p>section div.set-form.warn input:focus,
+div.settings-p>section div.set-form.warn textarea:focus {
   background-color: rgba(238, 255, 0, 0.459);
 }
 
-div.settings-p > section > div.set-form div.form-half{
+div.settings-p>section>div.set-form div.form-half {
   display: flex;
 }
 
-div.settings-p > section > div.set-form div.form-half div{
+div.settings-p>section>div.set-form div.form-half div {
   margin-right: 1rem;
   padding-top: .3rem;
   flex: 1;
 }
 
-div.settings-p > section > div.set-form div.form-half div:last-child{
+div.settings-p>section>div.set-form div.form-half div:last-child {
   margin-right: 0;
 }
 
-div.settings-p > section > div.set-form div.form-half div input{
+div.settings-p>section>div.set-form div.form-half div input {
   width: 100%;
 }
 
-div.settings-p > section > div.set-form div.form-half div label{
+div.settings-p>section>div.set-form div.form-half div label {
   font-size: .7rem;
 }
 
-i.normset-imp{
+i.normset-imp {
   height: .7rem;
 }
 
-div.settings-p > section > div.set-form span.doll + input{
+div.settings-p>section>div.set-form span.doll+input {
   padding-left: 2rem;
 }
 
-div.settings-p > section > div.set-form span.doll{
+div.settings-p>section>div.set-form span.doll {
   position: absolute;
   bottom: 0;
   margin-bottom: .5rem;
@@ -676,7 +702,7 @@ div.settings-p > section > div.set-form span.doll{
   border: 0;
 }
 
-div.settings-p > section > div.set-form div.inner-add > p{
+div.settings-p>section>div.set-form div.inner-add>p {
   font-weight: bold;
   height: 3rem;
   display: flex;
@@ -685,51 +711,54 @@ div.settings-p > section > div.set-form div.inner-add > p{
   padding-top: 1rem;
 }
 
-div.settings-p > section > div.set-form div.inner-add > p i{
+div.settings-p>section>div.set-form div.inner-add>p i {
   padding-left: .2rem;
 }
 
-div.settings-p > section > div.set-form div.inner-add > span.show-bform{
+div.settings-p>section>div.set-form div.inner-add>span.show-bform {
   font-size: .8rem;
   border: 1px solid black;
   padding: .5rem;
   border-radius: .5rem;
   position: absolute;
-  top: 0; right: 0;
+  top: 0;
+  right: 0;
   cursor: pointer;
 }
 
-div.settings-p > section > div.set-form div.inner-add > form{
+div.settings-p>section>div.set-form div.inner-add>form {
   display: none;
 }
 
-div.settings-p > section > div.set-form div.inner-add > form.show{
+div.settings-p>section>div.set-form div.inner-add>form.show {
   display: block;
   padding: .4rem;
 }
 
-div.settings-p > section > div.set-form div.inner-add > div ul li{
+div.settings-p>section>div.set-form div.inner-add>div ul li {
   list-style-type: none;
   padding: .2rem;
   margin-left: .5rem;
   border-bottom: 1px solid grey;
 }
 
-div.settings-p > section > div.set-form div.inner-add > div ul li p{
+div.settings-p>section>div.set-form div.inner-add>div ul li p {
   display: flex;
   justify-content: space-between;
 }
 
-div.settings-p > section > div.set-form div.inner-add > div ul li p span.del{
+div.settings-p>section>div.set-form div.inner-add>div ul li p span.del {
   color: red;
   cursor: pointer;
 }
 
-div.settings-p > section > div.set-form div.inner-add > div ul li p span.del:hover{color: green}
+div.settings-p>section>div.set-form div.inner-add>div ul li p span.del:hover {
+  color: green
+}
 
 
 /* Timeline */
-div.timeline-container{
+div.timeline-container {
   display: flex;
   padding: 1rem;
   padding-top: 1.5rem;
@@ -737,7 +766,7 @@ div.timeline-container{
   /* background-color: red; */
 }
 
-div.timeline{
+div.timeline {
   border: 1px solid green;
   display: flex;
   width: 100%;
@@ -747,9 +776,10 @@ div.timeline{
   cursor: pointer;
 }
 
-div.timeline > div.covered-timeline{
+div.timeline>div.covered-timeline {
   position: absolute;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   bottom: 0;
   width: 0px;
   background-color: rgb(9, 126, 9);
@@ -757,9 +787,10 @@ div.timeline > div.covered-timeline{
   transition: width 2s;
 }
 
-div.timeline > div.hidden-timeline{
+div.timeline>div.hidden-timeline {
   position: absolute;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   bottom: 0;
   width: 0%;
   background-color: rgba(72, 29, 189, 0.685);
@@ -768,9 +799,10 @@ div.timeline > div.hidden-timeline{
   z-index: 2;
 }
 
-div.hover-timeline{
+div.hover-timeline {
   position: absolute;
-  top: 0; left: 0; 
+  top: 0;
+  left: 0;
   width: 0%;
   text-align: right;
   transition: opacity 1s;
@@ -779,7 +811,7 @@ div.hover-timeline{
   z-index: -1;
 }
 
-div.hover-timeline span{
+div.hover-timeline span {
   background-color: #72bd9e;
   border: 1px solid black;
   padding: .1rem;
@@ -789,28 +821,29 @@ div.hover-timeline span{
   justify-content: center;
 }
 
-div.hover-timeline.show{
+div.hover-timeline.show {
   z-index: 3;
   opacity: 1;
 }
 
-div.timeline-change-date{
+div.timeline-change-date {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 1rem;
 }
 
-div.timeline-change-date i{
+div.timeline-change-date i {
   cursor: pointer;
   height: 1.5rem;
 }
 
-div.calen-holder{
+div.calen-holder {
   opacity: 0;
   z-index: -2;
   position: absolute;
-  left: 0; top: 100%;
+  left: 0;
+  top: 100%;
   width: 100%;
   display: flex;
   align-items: center;
@@ -819,33 +852,34 @@ div.calen-holder{
   transition: opacity .5s;
 }
 
-div.calen-holder.show{
+div.calen-holder.show {
   z-index: 5;
   opacity: 1;
 }
 
-div.calen-holder.xshow{
+div.calen-holder.xshow {
   z-index: 5;
   opacity: 1;
 }
 
-div.calen-holder div.calen::after{
+div.calen-holder div.calen::after {
   content: "";
   position: absolute;
-  bottom: 100%; left: 50%;
+  bottom: 100%;
+  left: 50%;
   border-width: 7px;
   margin-left: -7px;
   border-style: solid;
   border-color: transparent transparent rgb(155, 154, 154) transparent;
 }
 
-div.calen-holder div.calen{
+div.calen-holder div.calen {
   border-radius: .5rem;
   background-color: rgb(155, 154, 154);
   padding: .5rem;
 }
 
-div.calen-holder div.calen div.the-calender-info{
+div.calen-holder div.calen div.the-calender-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -855,50 +889,51 @@ div.calen-holder div.calen div.the-calender-info{
 }
 
 div.the-calender-info .calen-month,
-div.the-calender-info .calen-year{
+div.the-calender-info .calen-year {
   cursor: pointer;
 }
 
-div.the-calender table td{
+div.the-calender table td {
   cursor: alias;
   padding: .2rem;
   text-align: center;
   border-bottom: 1px solid transparent;
 }
 
-div.the-calender table th{
+div.the-calender table th {
   padding: .2rem;
   text-align: center;
   font-weight: normal;
 }
 
-div.the-calender table td:hover{ 
+div.the-calender table td:hover {
   border-bottom: 1px solid black;
 }
 
-div.the-calender table td.active{ 
+div.the-calender table td.active {
   border-bottom: 1px solid green;
 }
 
-div.the-calender table td.xactive{ 
+div.the-calender table td.xactive {
   border-bottom: 1px solid orange;
 }
 
-div.the-calender table td.clouded{
+div.the-calender table td.clouded {
   opacity: .2;
 }
 
-div.calen-monyea-inp{
+div.calen-monyea-inp {
   position: absolute;
   width: 100%;
   bottom: 100%;
-  left: 0; right: 0;
+  left: 0;
+  right: 0;
   display: none;
   align-items: center;
   justify-content: space-between;
 }
 
-div.calen-monyea-inp span{
+div.calen-monyea-inp span {
   width: 40%;
   padding: .5rem;
   background-color: black;
@@ -910,9 +945,10 @@ div.calen-monyea-inp span{
   z-index: -2;
 }
 
-div.calen-monyea-inp span input{
+div.calen-monyea-inp span input {
   width: 100%;
-  border: 0; outline: 0;
+  border: 0;
+  outline: 0;
   background-color: transparent;
   border-bottom: 2px solid white;
   color: white;
@@ -920,79 +956,80 @@ div.calen-monyea-inp span input{
   font-size: .8rem;
 }
 
-div.calen-monyea-inp span::after{
+div.calen-monyea-inp span::after {
   content: "";
   position: absolute;
-  top: 100%; 
+  top: 100%;
   border-width: 7px;
   margin-left: -7px;
   border-style: solid;
   border-color: black transparent transparent transparent;
 }
 
-div.calen-monyea-inp span[class*=month]::after{
+div.calen-monyea-inp span[class*=month]::after {
   left: 1rem;
 }
 
-div.calen-monyea-inp span[class*=year]::after{
+div.calen-monyea-inp span[class*=year]::after {
   right: 1rem;
 }
 
-div.calen-monyea-inp[class*=show]{
+div.calen-monyea-inp[class*=show] {
   display: flex;
 }
 
-div.calen-monyea-inp.show-mon span[class*=month]{
+div.calen-monyea-inp.show-mon span[class*=month] {
   opacity: 1;
   z-index: 2;
 }
 
-div.calen-monyea-inp.show-yea span[class*=year]{
+div.calen-monyea-inp.show-yea span[class*=year] {
   opacity: 1;
   z-index: 2;
 }
 
-div.date-details{
+div.date-details {
   display: flex;
   flex-wrap: wrap;
   border-bottom: 10px dotted black;
 }
 
-div.date-details span{
+div.date-details span {
   font-size: 1.2rem;
   font-weight: bold;
 }
 
-div.date-details div.detail-day-date{
+div.date-details div.detail-day-date {
   width: 50%;
   padding: 1rem;
 }
 
-div.date-details div.detail-month-year{
+div.date-details div.detail-month-year {
   width: 50%;
   text-align: right;
   padding: 1rem;
 }
 
-div.date-details div.detail-time{
+div.date-details div.detail-time {
   width: 100%;
   text-align: center;
   display: flex;
   justify-content: center;
 }
 
-div.date-details div.detail-time span{
+div.date-details div.detail-time span {
   padding: 1rem;
 }
 
-div.timeline-reset{
+div.timeline-reset {
   position: absolute;
-  top: 0; right: 0;
+  top: 0;
+  right: 0;
   padding-right: 1rem;
   z-index: 2;
 }
 
-div.timeline-reset button{
+div.timeline-reset button {
   cursor: pointer;
   font-size: inherit;
   font-family: inherit;
@@ -1008,49 +1045,50 @@ div.timeline-reset button{
   transition: background-color 1s, color 1s;
 }
 
-div.timeline-reset button:hover{
+div.timeline-reset button:hover {
   background-color: white;
   color: black;
 }
 
-div.timelist-table{
+div.timelist-table {
   padding-top: 1rem;
   display: none;
 }
 
-table.organised-table{
+table.organised-table {
   padding: .5rem;
   width: 100%;
   border-collapse: collapse;
 }
 
-table.organised-table tr{
+table.organised-table tr {
   width: 100%;
 }
 
-table.organised-table thead tr{
+table.organised-table thead tr {
   background-color: rgb(108, 108, 108);
   border-bottom: 1px solid black;
 }
 
-table.organised-table tbody tr:nth-child(even){
+table.organised-table tbody tr:nth-child(even) {
   background-color: rgb(172, 171, 171);
 }
 
-table.organised-table tbody tr:nth-child(odd){
+table.organised-table tbody tr:nth-child(odd) {
   background-color: grey;
 }
 
-table.organised-table td,table.organised-table th{
+table.organised-table td,
+table.organised-table th {
   text-align: center;
   padding: 1rem 0;
 }
 
-table.organised-table tbody tr.active{
+table.organised-table tbody tr.active {
   background-color: green;
 }
 
-div.tasktime-tabs{
+div.tasktime-tabs {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -1058,7 +1096,7 @@ div.tasktime-tabs{
   padding: 0 1rem;
 }
 
-div.tasktime-tabs div{
+div.tasktime-tabs div {
   margin: 0 1rem;
   padding: 1rem 0;
   text-align: center;
@@ -1073,39 +1111,39 @@ div.tasktime-tabs div{
   border-bottom: 3px solid rgba(0, 0, 0, 0);
 }
 
-div.tasktime-tabs div:hover{
+div.tasktime-tabs div:hover {
   border-bottom: 3px solid rgba(0, 0, 0, 0.39);
   opacity: .7;
 }
 
-div.tasktime-tabs div.active{
+div.tasktime-tabs div.active {
   border-bottom: 3px solid black;
   opacity: 1;
 }
 
-div.timelist-table.show{
+div.timelist-table.show {
   display: block;
 }
 
-div.say-something.show{
+div.say-something.show {
   display: flex;
 }
 
-div.say-something section{
+div.say-something section {
   flex: 5;
   padding: 1rem;
 }
 
-div.say-something aside{
+div.say-something aside {
   flex: 2;
   padding: 1rem;
 }
 
-div.say-something li{
+div.say-something li {
   list-style-type: none;
 }
 
-div.quotesuses > header{
+div.quotesuses>header {
   text-align: center;
   padding: .5rem;
   padding-top: 0;
@@ -1114,7 +1152,7 @@ div.quotesuses > header{
   font-size: 1.2rem;
 }
 
-div.quotesuses ul li{
+div.quotesuses ul li {
   padding-bottom: .6rem;
   text-align: center;
   display: flex;
@@ -1122,7 +1160,7 @@ div.quotesuses ul li{
   justify-content: center;
 }
 
-div.quotesuses ul li div{
+div.quotesuses ul li div {
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid grey;
@@ -1130,43 +1168,44 @@ div.quotesuses ul li div{
   width: 80%;
 }
 
-div.quotesuses ul li:last-child div{
+div.quotesuses ul li:last-child div {
   border-bottom: 0 none;
 }
 
-div.quotesuses ul li div span.name{
+div.quotesuses ul li div span.name {
   padding-bottom: .3rem;
 }
 
-div.quotesuses ul li div span.Number{
+div.quotesuses ul li div span.Number {
   padding-bottom: .5rem;
 }
 
-div.quotesuses ul li div span.status{
+div.quotesuses ul li div span.status {
   padding-bottom: .3rem;
 }
 
-div.quotesuses ul li div span.action{
+div.quotesuses ul li div span.action {
   fill: green;
 }
 
-div.quotesuses ul li div span.action span.tooltixp{
+div.quotesuses ul li div span.action span.tooltixp {
   display: none;
   background-color: darkblue;
   color: white;
   position: absolute;
-  top: 120%; left: 0;
+  top: 120%;
+  left: 0;
   z-index: 5;
   border-radius: .5rem;
   padding: .3rem;
   width: 100%;
 }
 
-div.quotesuses ul li div span.action:hover span.tooltixp{
+div.quotesuses ul li div span.action:hover span.tooltixp {
   display: inline;
 }
 
-div.quotesuses ul li div span.action span.tooltixp::after{
+div.quotesuses ul li div span.action span.tooltixp::after {
   content: '';
   position: absolute;
   bottom: 100%;
@@ -1177,7 +1216,7 @@ div.quotesuses ul li div span.action span.tooltixp::after{
   border-style: solid;
 }
 
-div.quotesuses ul li div input{
+div.quotesuses ul li div input {
   background-color: transparent;
   border: 0 none;
   border-bottom: 1px solid black;
@@ -1187,30 +1226,30 @@ div.quotesuses ul li div input{
   padding-bottom: .1rem;
 }
 
-section ul.quote-section-ul{
+section ul.quote-section-ul {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
-section ul.quote-section-ul img{
+section ul.quote-section-ul img {
   width: 30%;
   padding-top: 1rem;
 }
 
-section ul.quote-section-ul li{
+section ul.quote-section-ul li {
   padding-bottom: 1rem;
   width: 100%;
 }
 
-section ul.quote-section-ul li span.from{
+section ul.quote-section-ul li span.from {
   display: block;
   text-align: right;
   font-size: .7rem;
 }
 
-section ul.imp-quote-section-ul{
+section ul.imp-quote-section-ul {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1218,12 +1257,12 @@ section ul.imp-quote-section-ul{
   padding: 1rem;
 }
 
-section ul.imp-quote-section-ul img{
+section ul.imp-quote-section-ul img {
   width: 30%;
   padding-top: 2rem;
 }
 
-section ul.imp-quote-section-ul > li{
+section ul.imp-quote-section-ul>li {
   text-align: center;
   border-bottom: 1px solid grey;
   margin-bottom: .5rem;
@@ -1232,27 +1271,27 @@ section ul.imp-quote-section-ul > li{
   list-style-type: none;
 }
 
-section ul.imp-quote-section-ul > li:last-child{
+section ul.imp-quote-section-ul>li:last-child {
   border-bottom: 0 none;
 }
 
-section ul.imp-quote-section-ul > li:first-of-type{
+section ul.imp-quote-section-ul>li:first-of-type {
   text-align: left;
   border-bottom: 0 none;
 }
 
-section ul.imp-quote-section-ul > li li{
+section ul.imp-quote-section-ul>li li {
   padding: .5rem 0 .5rem 0rem;
   text-align: left;
   margin-left: 2rem;
 }
 
-section ul.imp-quote-section-ul div.set-form{
+section ul.imp-quote-section-ul div.set-form {
   display: flex;
   flex-direction: column;
 }
 
-section ul.imp-quote-section-ul div.set-form input{
+section ul.imp-quote-section-ul div.set-form input {
   padding: .5rem;
   border-radius: .5rem;
   margin-top: .2rem;
@@ -1263,39 +1302,40 @@ section ul.imp-quote-section-ul div.set-form input{
   font-family: inherit;
 }
 
-section ul.imp-quote-section-ul div.set-form div.form-half{
+section ul.imp-quote-section-ul div.set-form div.form-half {
   display: flex;
 }
 
-section ul.imp-quote-section-ul div.set-form div.form-half div{
+section ul.imp-quote-section-ul div.set-form div.form-half div {
   margin-right: 1rem;
   padding-top: .3rem;
   flex: 1;
 }
 
-section ul.imp-quote-section-ul div.set-form div.form-half div input{
+section ul.imp-quote-section-ul div.set-form div.form-half div input {
   width: 100%;
 }
 
-section ul.imp-quote-section-ul div.set-form div.form-half div label{
+section ul.imp-quote-section-ul div.set-form div.form-half div label {
   font-size: .7rem;
 }
 
-span#money-checker{
+span#money-checker {
   display: block;
   text-align: center;
   padding-top: 1rem;
 }
 
-div.imp-title{
+div.imp-title {
   text-align: center;
   font-size: 1.1rem;
   text-decoration: underline;
 }
 
-div.small-nav{
+div.small-nav {
   position: fixed;
-  top: 2.7rem; right: 0;
+  top: 2.7rem;
+  right: 0;
   display: flex;
   flex-direction: column;
   background-color: #cfcfcf;
@@ -1310,7 +1350,7 @@ div.small-nav{
   overflow: hidden;
 }
 
-div.small-nav div{
+div.small-nav div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1319,16 +1359,16 @@ div.small-nav div{
 
 }
 
-div.small-nav > div > div{
+div.small-nav>div>div {
   padding: .5rem;
 }
 
-div.small-nav i{
+div.small-nav i {
   height: 1.4rem;
   fill: brown;
 }
 
-div.small-nav div.sn-calender{
+div.small-nav div.sn-calender {
   display: none;
   position: absolute;
   right: 100%;
@@ -1338,7 +1378,7 @@ div.small-nav div.sn-calender{
   margin-right: 1rem;
 }
 
-div.sn-calen div.sn-the-calender-info{
+div.sn-calen div.sn-the-calender-info {
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -1349,28 +1389,28 @@ div.sn-calen div.sn-the-calender-info{
   border-bottom: 1px solid rgb(58, 58, 58);
 }
 
-div.sn-the-calender table td{
+div.sn-the-calender table td {
   cursor: alias;
   padding: .2rem;
   text-align: center;
   border-bottom: 1px solid transparent;
 }
 
-div.sn-the-calender table th{
+div.sn-the-calender table th {
   padding: .2rem;
   text-align: center;
   font-weight: normal;
 }
 
-div.sn-the-calender table td.active{ 
+div.sn-the-calender table td.active {
   border-bottom: 1px solid green;
 }
 
-div.sn-the-calender table td.clouded{
+div.sn-the-calender table td.clouded {
   opacity: .4;
 }
 
-div.small-nav div.sn-mail-box{
+div.small-nav div.sn-mail-box {
   display: none;
   position: absolute;
   right: 100%;
@@ -1382,17 +1422,17 @@ div.small-nav div.sn-mail-box{
   width: 50vw;
 }
 
-div.small-nav div.sn-mail-box div{
+div.small-nav div.sn-mail-box div {
   padding: 0;
   display: block;
 }
 
-div.small-nav div.sn-mail-box div.sn-mail-header{
+div.small-nav div.sn-mail-box div.sn-mail-header {
   padding: .5rem;
   padding-bottom: 0;
 }
 
-div.small-nav div.sn-mail-box div.form-box{
+div.small-nav div.sn-mail-box div.form-box {
   padding: .7rem;
   padding-bottom: 0;
   display: flex;
@@ -1400,18 +1440,20 @@ div.small-nav div.sn-mail-box div.form-box{
   align-items: flex-start;
 }
 
-div.small-nav div.sn-mail-box div.form-box input{
+div.small-nav div.sn-mail-box div.form-box input {
   background-color: transparent;
-  border: 0; outline: 0;
+  border: 0;
+  outline: 0;
   border-bottom: 1px solid black;
   font-family: inherit;
   font-size: .8rem;
   width: 100%;
 }
 
-div.small-nav div.sn-mail-box div.form-box textarea{
+div.small-nav div.sn-mail-box div.form-box textarea {
   background-color: transparent;
-  border: 0; outline: 0;
+  border: 0;
+  outline: 0;
   font-family: inherit;
   font-size: .8rem;
   border: 1px solid rgb(61, 61, 61);
@@ -1420,8 +1462,9 @@ div.small-nav div.sn-mail-box div.form-box textarea{
   border-radius: .3rem;
 }
 
-div.small-nav div.sn-mail-box input[type=submit]{
-  border: 0; outline: 0;
+div.small-nav div.sn-mail-box input[type=submit] {
+  border: 0;
+  outline: 0;
   font-family: inherit;
   font-size: .8rem;
   border: 1px solid rgb(61, 61, 61);
@@ -1432,12 +1475,12 @@ div.small-nav div.sn-mail-box input[type=submit]{
   transition: border .5s, box-shadow .5s;
 }
 
-div.small-nav div.sn-mail-box input[type=submit]:hover{
+div.small-nav div.sn-mail-box input[type=submit]:hover {
   border: 1px solid white;
   box-shadow: 0 0 5px .5px;
 }
 
-div.small-nav div.sn-mail-box div.sn-mail-others{
+div.small-nav div.sn-mail-box div.sn-mail-others {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -1446,123 +1489,136 @@ div.small-nav div.sn-mail-box div.sn-mail-others{
   flex-wrap: wrap;
 }
 
-div.small-nav div.sn-mail-box div.sn-mail-others i{
+div.small-nav div.sn-mail-box div.sn-mail-others i {
   padding: .2rem;
   fill: blue;
 }
 
-div.small-nav div.sn-mail-box.show{
+div.small-nav div.sn-mail-box.show {
   display: block;
 }
 
-div.small-nav div.sn-calender.show{
+div.small-nav div.sn-calender.show {
   display: block;
 }
 
-@keyframes transSmallNav{
-  0%{overflow: hidden;}
-  99%{overflow: hidden;}
-  100%{overflow: visible;}
+@keyframes transSmallNav {
+  0% {
+    overflow: hidden;
+  }
+
+  99% {
+    overflow: hidden;
+  }
+
+  100% {
+    overflow: visible;
+  }
 }
 
-div.small-nav:hover, div.small-nav.show{
+div.small-nav:hover,
+div.small-nav.show {
   height: 6.8rem;
   overflow: visible;
   animation: transSmallNav 1s 1;
 }
 
-span.right-rollhello{
+span.right-rollhello {
   background-color: #cfcfcf;
   height: 100%;
   width: 50%;
   position: absolute;
   border-bottom: 2px solid #cfcfcf;
   box-sizing: content-box;
-  top: 0; right: 0; bottom: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
   transition: width 3s;
 }
 
-span.left-rollhello{
+span.left-rollhello {
   background-color: #cfcfcf;
   height: 100%;
   width: 50%;
   position: absolute;
-  top: 0; left: 0; bottom: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
   border-bottom: 2px solid #cfcfcf;
   box-sizing: content-box;
   transition: width 3s;
 }
 
-div.home.show-1 h1 > span.right-rollhello,
-div.home.show-1 h1 > span.left-rollhello{
+div.home.show-1 h1>span.right-rollhello,
+div.home.show-1 h1>span.left-rollhello {
   width: 0;
 }
 
-div.home div.home-contents > ul{
+div.home div.home-contents>ul {
   transition: margin 2s;
 }
 
-div.home div.home-contents{
+div.home div.home-contents {
   overflow: hidden;
 }
 
-div.home.show-2 div.home-contents{
+div.home.show-2 div.home-contents {
   overflow: visible;
 }
 
-div.home.show-2 div.home-contents > ul > li{
+div.home.show-2 div.home-contents>ul>li {
   margin: .5rem;
   border: 1px solid black;
   box-shadow: 0 0 0px 0px black;
   transform: scale(1);
 }
 
-div.quotesuses > header span{
+div.quotesuses>header span {
   display: none;
 }
 
 @media screen and (max-width: 400px) {
 
-  *{
+  * {
     font-size: .8rem;
   }
 
-  section ul.imp-quote-section-ul > li li {
+  section ul.imp-quote-section-ul>li li {
     margin-left: .8rem;
   }
 
-  div.date-details span{
+  div.date-details span {
     font-size: .9rem;
   }
 
-  div.timeline-change-date i{
+  div.timeline-change-date i {
     height: 1.3rem;
   }
 
-  div.timeline{
+  div.timeline {
     height: 1.2rem;
   }
 
-  table.organised-table td:first-child, 
-  table.organised-table th:first-child, 
-  table.organised-table th:last-child, 
-  table.organised-table td:last-child{
+  table.organised-table td:first-child,
+  table.organised-table th:first-child,
+  table.organised-table th:last-child,
+  table.organised-table td:last-child {
     display: none;
   }
 
-  div.say-something.show{
+  div.say-something.show {
     flex-direction: column;
   }
 
-  div.say-something section{
+  div.say-something section {
     order: 2;
   }
 
-  div.say-something aside{
+  div.say-something aside {
     order: 1;
   }
 
-  div.say-something aside{
+  div.say-something aside {
     padding-bottom: 0;
   }
 
@@ -1570,22 +1626,22 @@ div.quotesuses > header span{
     flex: 5;
     padding: 0 1rem;
   }
-  
-  div.quotesuses ul li:last-child{
+
+  div.quotesuses ul li:last-child {
     padding-bottom: 0;
   }
-  
-  div.quotesuses ul{
+
+  div.quotesuses ul {
     border-bottom: 1px solid black;
     margin-bottom: 1rem;
     display: none;
   }
-  
-  div.quotesuses ul.show{
+
+  div.quotesuses ul.show {
     display: block;
   }
 
-  div.quotesuses > header span{
+  div.quotesuses>header span {
     padding: .1rem;
     border: 1px solid rgb(90, 90, 90);
     width: 1.3rem;
@@ -1597,23 +1653,23 @@ div.quotesuses > header span{
     font-size: 1.2rem;
   }
 
-  div.quotesuses > header span:hover{
+  div.quotesuses>header span:hover {
     border: 1px solid rgb(48, 67, 175);
     color: rgb(48, 67, 175);
   }
 
-  div.top-nav > nav > ul li.active{
+  div.top-nav>nav>ul li.active {
     order: 10;
     width: 100%;
   }
 
-  div.top-nav > nav > ul li{
+  div.top-nav>nav>ul li {
     width: 50%;
     flex: 0;
     flex-basis: auto;
   }
 
-  div.top-nav > nav > ul{
+  div.top-nav>nav>ul {
     flex-wrap: wrap;
     box-shadow: 0 0 3px 1px black;
     margin-bottom: .5rem;
@@ -1622,31 +1678,31 @@ div.quotesuses > header span{
 
 @media screen and (max-width: 200px) {
 
-  *{
+  * {
     font-size: .6rem;
   }
 
-  section ul.imp-quote-section-ul > li li {
+  section ul.imp-quote-section-ul>li li {
     margin-left: .4rem;
   }
 
-  div.date-details span{
+  div.date-details span {
     font-size: .7rem;
   }
 
-  div.timeline-change-date i{
+  div.timeline-change-date i {
     height: 1.2rem;
   }
 
-  div.timeline{
+  div.timeline {
     height: 1rem;
   }
 
-  div.timetables-holder{
+  div.timetables-holder {
     overflow: auto;
   }
 
-  div.calen-holder{
+  div.calen-holder {
     display: none;
   }
 
@@ -1654,17 +1710,29 @@ div.quotesuses > header span{
 
 @media screen and (max-width: 250px) {
 
-  div.small-nav div.sn-calender.show{
+  div.small-nav div.sn-calender.show {
     display: none;
   }
 }
 
 @media screen and (max-width: 100px) {
-  section ul.imp-quote-section-ul div.set-form div.form-half{
+  section ul.imp-quote-section-ul div.set-form div.form-half {
     flex-direction: column;
   }
 }
 
-div.timeline-change-date i{
+div.timeline-change-date i {
   z-index: 6;
+}
+
+.empt-arry {
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  font-size: 2rem;
+  padding: 2rem;
+  text-align: center;
 }
